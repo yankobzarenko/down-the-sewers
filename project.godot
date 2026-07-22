@@ -12,6 +12,10 @@ config_version=5
 
 metroidvania_system/settings_file="res://SampleProject/Resources/Settings.tres"
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
 config/name="Down the Sewers"
@@ -39,8 +43,6 @@ gdscript/warnings/narrowing_conversion=0
 
 window/size/viewport_width=864
 window/size/viewport_height=480
-window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
 window/per_pixel_transparency/allowed=true
 
 [dotnet]
@@ -53,43 +55,12 @@ script/search_in_file_extensions=PackedStringArray("gd", "gdshader", "tscn")
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/MetroidvaniaSystem/EditorExtension/plugin.cfg", "res://addons/MetroidvaniaSystem/plugin.cfg", "res://addons/PluginRefresher/plugin.cfg")
+enabled=PackedStringArray("res://addons/MetroidvaniaSystem/EditorExtension/plugin.cfg", "res://addons/MetroidvaniaSystem/plugin.cfg")
 
 [filesystem]
 
 import/blender/enabled=false
 
-[input]
-
-left={
-"deadzone": 0.2,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":65,"key_label":0,"unicode":97,"location":0,"echo":false,"script":null)
-]
-}
-right={
-"deadzone": 0.2,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":68,"key_label":0,"unicode":100,"location":0,"echo":false,"script":null)
-]
-}
-up={
-"deadzone": 0.2,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":32,"key_label":0,"unicode":32,"location":0,"echo":false,"script":null)
-]
-}
-down={
-"deadzone": 0.2,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":83,"key_label":0,"unicode":115,"location":0,"echo":false,"script":null)
-]
-}
-
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://addons/MetroidvaniaSystem/Database/Editor/MapEditor.gd", "res://addons/MetroidvaniaSystem/Database/Editor/MapEditor.tscn", "res://addons/MetroidvaniaSystem/Database/Editor/ModeSceneAssign.gd", "res://addons/MetroidvaniaSystem/Database/LayerSelector.tscn", "res://addons/MetroidvaniaSystem/Database/Main.gd", "res://addons/MetroidvaniaSystem/Database/Main.tscn", "res://addons/MetroidvaniaSystem/Database/Manage/Manage.tscn", "res://addons/MetroidvaniaSystem/Database/Manage/Validation.gd", "res://addons/MetroidvaniaSystem/Database/Viewer/CollectibleElement.gd", "res://addons/MetroidvaniaSystem/Database/Viewer/CollectibleElement.tscn", "res://addons/MetroidvaniaSystem/Database/Viewer/CollectibleFinder.gd", "res://addons/MetroidvaniaSystem/Database/Viewer/CollectibleSettings.gd", "res://addons/MetroidvaniaSystem/Database/Viewer/MapViewer.gd", "res://addons/MetroidvaniaSystem/Database/Viewer/MapViewer.tscn", "res://addons/MetroidvaniaSystem/EditorExtension/MetSysEditorExtension.gd", "res://addons/MetroidvaniaSystem/MetSysPlugin.gd")
-
-[physics]
-
-3d/physics_engine="Jolt Physics"
-
-[rendering]
-
-rendering_device/driver.windows="d3d12"
+locale/translations_pot_files=PackedStringArray("res://addons/MetroidvaniaSystem/Database/Manage.tscn", "res://addons/MetroidvaniaSystem/Database/Main.tscn", "res://addons/MetroidvaniaSystem/Database/MapEditor.tscn", "res://addons/MetroidvaniaSystem/Database/MapViewer.tscn", "res://addons/MetroidvaniaSystem/Nodes/LayerSelector.tscn", "res://addons/MetroidvaniaSystem/Nodes/CollectibleElement.tscn", "res://addons/MetroidvaniaSystem/MetSysPlugin.gd")
