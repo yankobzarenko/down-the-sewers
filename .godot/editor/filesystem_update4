@@ -1,3 +1,6 @@
-res://SampleProject/Player.tscn
+res://SampleProject/Scripts/Game.gd
+res://SampleProject/Game.tscn
 res://SampleProject/Resources/Tileset.tres
+res://SampleProject/Maps/starting_point.tscn
 res://SampleProject/Resources/Settings.tres
+res://SampleProject/Maps/StartingPoint.tscn
