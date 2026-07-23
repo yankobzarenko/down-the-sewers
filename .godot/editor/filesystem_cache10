@@ -1,5 +1,5 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1784702398
+::res://::1784765507
 icon.svg::CompressedTexture2D::1696966632735640405::1784702382::1784702382::1::::<><><>0<>0<>df708bbf865afe7e6c6e60313de6c61a<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://addons/::1784702381
 ::res://addons/MetroidvaniaSystem/::1784699849
@@ -273,9 +273,9 @@ ru.po::Translation::-1::1784699810::0::1::::<><><>0<>0<><>::
 sv_SE.po::Translation::-1::1784699810::0::1::::<><><>0<>0<><>::
 zh-hans.po::Translation::-1::1784699810::0::1::::<><><>0<>0<><>::
 zh-hant.po::Translation::-1::1784699810::0::1::::<><><>0<>0<><>::
-::res://SampleProject/::1784702382
+::res://SampleProject/::1784721095
 Game.tscn::PackedScene::6786581576714978419::1784702382::0::1::::<><><>0<>0<><>::uid://btgvo27tngq4o::::res://SampleProject/Scripts/Game.gd<>uid://xpbhai8nlgtx::::res://SampleProject/Player.tscn<>uid://dch8dyylb7526::::res://addons/MetroidvaniaSystem/Template/Nodes/Minimap.tscn<>uid://wiq0mic5m6is::::res://SampleProject/Sprites/Collectible.png<>uid://bd5w7n7gew76f::::res://SampleProject/Objects/CollectionGridItem.tscn<>uid://dpwli04va881g::::res://SampleProject/Sprites/MapItem.png
-Player.tscn::PackedScene::1645382301411358845::1784702382::0::1::::<><><>0<>0<><>::uid://befxy1ldt1ys1::::res://SampleProject/Scripts/Player.gd<>uid://c3v5jdyj2jl4e::::res://SampleProject/Sprites/MC.png
+Player.tscn::PackedScene::1645382301411358845::1784721095::0::1::::<><><>0<>0<><>::uid://befxy1ldt1ys1::::res://SampleProject/Scripts/Player.gd<>uid://rmc03br1yacf::::res://SampleProject/Sprites/platformer_sprites_pixelized_0.png
 ::res://SampleProject/Maps/::1784699809
 Corridor.tscn::PackedScene::4985752293229413285::1784699809::0::1::::<><><>0<>0<><>::uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres<>uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn<>uid://c8j6i3fx8p758::::res://SampleProject/Objects/Collectible.tscn
 DarkCorridor.tscn::PackedScene::9205637905522873065::1784699809::0::1::::<><><>0<>0<><>::uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres<>uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn<>uid://0u1nlyd1ld6o::::res://SampleProject/Scripts/SavePoint.gd
@@ -308,9 +308,9 @@ MapItem.tscn::PackedScene::8929905936690348143::1784699809::0::1::::<><><>0<>0<>
 MiniPortal.tscn::PackedScene::7582920266729334651::1784699809::0::1::::<><><>0<>0<><>::uid://cargdawan7gao::::res://SampleProject/Sprites/Portal.png
 Pipe.tscn::PackedScene::6207250050862389643::1784699809::0::1::::<><><>0<>0<><>::uid://c00he1hprcray::::res://SampleProject/Sprites/Pipe.png<>uid://dav4phd4q7vv3::::res://SampleProject/Sprites/PipeWater.png
 Portal.tscn::PackedScene::6352454399230159599::1784699809::0::1::::<><><>0<>0<><>::uid://b6hvngpyjmbfk::::res://SampleProject/Scripts/Portal.gd<>uid://cargdawan7gao::::res://SampleProject/Sprites/Portal.png
-::res://SampleProject/Resources/::1784702382
-Settings.tres::Resource::1083356745091211609::1784699809::0::1::::<><><>0<>0<><>::uid://b23v0vuudcegw::::res://SampleProject/Scripts/CustomElements.gd<>uid://orxlanqpgccv::::res://addons/MetroidvaniaSystem/Scripts/Settings.gd<>uid://bt6s3nd8xo6b::::res://addons/MetroidvaniaSystem/Themes/Exquisite/Theme.tres
-Tileset.tres::TileSet::3961674499261024951::1784702382::0::1::::<><><>0<>0<><>::uid://droyrt0ybqgm7::::res://SampleProject/Sprites/Tiles.png<>uid://cki7wjbeux672::::res://SampleProject/Sprites/DarkTiles.png<>uid://bfjtblf8h62lv::::res://SampleProject/Sprites/MirageTiles.png
+::res://SampleProject/Resources/::1784721383
+Settings.tres::Resource::1083356745091211609::1784721383::0::1::::<><><>0<>0<><>::uid://b23v0vuudcegw::::res://SampleProject/Scripts/CustomElements.gd<>uid://orxlanqpgccv::::res://addons/MetroidvaniaSystem/Scripts/Settings.gd<>uid://bt6s3nd8xo6b::::res://addons/MetroidvaniaSystem/Themes/Exquisite/Theme.tres
+Tileset.tres::TileSet::3961674499261024951::1784705145::0::1::::<><><>0<>0<><>::uid://droyrt0ybqgm7::::res://SampleProject/Sprites/Tiles.png<>uid://cki7wjbeux672::::res://SampleProject/Sprites/DarkTiles.png<>uid://bfjtblf8h62lv::::res://SampleProject/Sprites/MirageTiles.png
 ::res://SampleProject/Scripts/::1784702382
 CustomElements.gd::GDScript::4340642875528609586::1784699809::0::1::::<><><>0<>1<><>::
 Game.gd::GDScript::3733696505747935240::1784699809::0::1::::Game<>Node<><>0<>0<><>::
@@ -318,7 +318,7 @@ LoopScript.gd::GDScript::4661527728933454977::1784699809::0::1::::<>Area2D<><>0<
 Player.gd::GDScript::2678938679665574910::1784702382::0::1::::<>CharacterBody2D<><>0<>0<><>::
 Portal.gd::GDScript::4578024092334500072::1784699809::0::1::::<>Area2D<><>0<>0<><>::
 SavePoint.gd::GDScript::1797611118168342288::1784699809::0::1::::<>Area2D<><>0<>0<><>::
-::res://SampleProject/Sprites/::1784703787
+::res://SampleProject/Sprites/::1784703788
 Button.png::CompressedTexture2D::7173155864005918478::1784699809::1784699849::1::::<><><>0<>0<>601adb8a2579a07e92e91b438ba2a3d5<>res://.godot/imported/Button.png-45c0115d9bd0546fcf2aabd7b3e90fff.ctex::
 Collectible.png::CompressedTexture2D::1561686341571182238::1784699809::1784699849::1::::<><><>0<>0<>9ac6ecf24c024a7a0290293ad6a0c12e<>res://.godot/imported/Collectible.png-4e69904edf25dbf4a42a69ed0494d4f8.ctex::
 DarkTiles.png::CompressedTexture2D::5493227531497803791::1784699809::1784699849::1::::<><><>0<>0<>12390ab2ca450bfc0b6810a465a8b342<>res://.godot/imported/DarkTiles.png-9392759dac34aab30657687bcc6a41bd.ctex::

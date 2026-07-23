@@ -38,16 +38,16 @@ func _physics_process(delta: float) -> void:
 		airtime = 0
 	
 	var on_floor_ct: bool = is_on_floor() or airtime < COYOTE_TIME
-	if Input.is_action_just_pressed("ui_accept") and (on_floor_ct or double_jump):
+	if Input.is_action_just_pressed("Jump") and (on_floor_ct or double_jump):
 		if not on_floor_ct:
 			double_jump = false
 		
-		if Input.is_action_pressed("ui_down"):
+		if Input.is_action_pressed("Down"):
 			position.y += 8
 		else:
 			velocity.y = JUMP_VELOCITY
 	
-	if Input.is_action_just_released("ui_accept"):
+	if Input.is_action_just_released("Jump"):
 		if not is_on_floor() and velocity.y < 0:
 			velocity.y = min(0, velocity.y - JUMP_VELOCITY * SHORT_HOP)
 			
@@ -55,7 +55,7 @@ func _physics_process(delta: float) -> void:
 	if is_on_wall():
 		speed = SPEED_MIN
 	
-	var direction := Input.get_axis("ui_left", "ui_right")
+	var direction := Input.get_axis("Left", "Right")
 	if direction:
 		speed = min(SPEED_MAX, speed + ACCEL * delta)
 		velocity.x = direction * speed

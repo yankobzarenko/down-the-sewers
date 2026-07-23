@@ -1,3 +1,5 @@
 res://SampleProject/Player.tscn
 res://SampleProject/Resources/Tileset.tres
-res://SampleProject/Resources/Settings.tres
+res://SampleProject/Scripts/Player.gd
+res://SampleProject/Game.tscn
+res://SampleProject/Objects/Elevator.tscn
