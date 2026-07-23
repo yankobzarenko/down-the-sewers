@@ -62,6 +62,9 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED_MIN)
 		speed = SPEED_MIN
+	
+	if &"dash" and Input.is_action_just_pressed("dash"):
+		position.x += direction * 150.0
 
 	prev_on_floor = is_on_floor()
 	move_and_slide()

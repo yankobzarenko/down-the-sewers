@@ -3,6 +3,26 @@
 [ext_resource type="TileSet" uid="uid://bwpcg2opya34n" path="res://SampleProject/Resources/Tileset.tres" id="1_x7s6o"]
 [ext_resource type="PackedScene" uid="uid://bsg0351mx3b4u" path="res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn" id="2_113wl"]
 
+[sub_resource type="GDScript" id="GDScript_gqq55"]
+resource_name = "Ability"
+script/source = "# Ability collectible.
+extends Area2D
+
+func _ready() -> void:
+	# Register it as storable with marker.
+	MetSys.register_storable_object_with_marker(self)
+
+func _on_body_entered(body: Node2D) -> void:
+	if body.is_in_group(&\"player\"):
+		# Add ability, store object and remove the node.
+		body.abilities.append(&\"dash\")
+		MetSys.store_object(self)
+		queue_free()
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pobwj"]
+size = Vector2(112, 32)
+
 [node name="Map" type="Node2D" unique_id=420470484]
 
 [node name="TileMap" type="Node2D" parent="." unique_id=1088043635]
@@ -19,3 +39,28 @@ tile_map_data = PackedByteArray("AAAAAAkAAgAIAAEAAAAAAAoAAgAIAAEAAAAAAAsAAgAIAAE
 tile_set = ExtResource("1_x7s6o")
 
 [node name="RoomInstance" parent="." unique_id=792063801 instance=ExtResource("2_113wl")]
+
+[node name="Ability" type="Area2D" parent="RoomInstance" unique_id=1152449529]
+position = Vector2(208, 279)
+script = SubResource("GDScript_gqq55")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RoomInstance/Ability" unique_id=1383357869]
+shape = SubResource("RectangleShape2D_pobwj")
+
+[node name="Label" type="Label" parent="RoomInstance/Ability" unique_id=931598082]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -13.0
+offset_right = 50.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Dash"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[connection signal="body_entered" from="RoomInstance/Ability" to="RoomInstance/Ability" method="_on_body_entered"]

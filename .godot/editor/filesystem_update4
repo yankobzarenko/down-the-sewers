@@ -1,3 +1,10 @@
 res://SampleProject/Maps/Boss Room.tscn
 res://SampleProject/Resources/Settings.tres
 res://SampleProject/Resources/Tileset.tres
+res://SampleProject/Maps/DarkStaircase.tscn
+res://SampleProject/Maps/RelicRoom.tscn
+res://SampleProject/Objects/moving_platform.gd
+res://SampleProject/Maps/DarkCorridor.tscn
+res://SampleProject/Scripts/Player.gd
+res://SampleProject/Objects/crow.tscn
+res://SampleProject/Objects/crow.gd
