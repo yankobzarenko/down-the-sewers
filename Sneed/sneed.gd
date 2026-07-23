@@ -3,7 +3,9 @@ extends CharacterBody2D
 @onready var agent: NavigationAgent2D = $NavigationAgent2D
 @onready var anim: AnimationPlayer = $AnimationPlayer
 @onready var vision_ray: RayCast2D = $VisionRay 
- 
+@onready var sprite: Sprite2D = $Sprite2D
+@onready var attack: Sprite2D = $Attack
+
 # --------------------
 # CONFIG
 # --------------------
@@ -115,8 +117,12 @@ func _state_chase(delta: float) -> void:
  
 func _state_attack() -> void:
 	velocity = Vector2.ZERO
-	anim.play("UAL/Sword_Attack")
+	sprite.visible = false
+	attack.visible = true
+	anim.play("melee")
 	await anim.animation_finished
+	attack.visible = false
+	sprite.visible = true
 	# TODO: handle player capture
 	_enter_state(State.CHASE)
  
@@ -157,12 +163,12 @@ func _update_agent_target() -> void:
 			agent.set_target_position(return_position)
  
 func _walk_to(next_pos: Vector2, speed: float) -> void:
-	anim.play("UAL/Walk")
+	anim.play("Run")
 	_move_towards(next_pos, speed)
  
 func _stop_and_idle() -> void:
 	velocity = Vector2.ZERO
-	anim.play("UAL/Idle")
+	anim.play("Idle")
  
 func _go_to_next_patrol_point() -> void:
 	if patrol_points.size() != 0:

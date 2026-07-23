@@ -1,13 +1,4 @@
 res://Sneed/sneed.tscn
+res://addons/MetroidvaniaSystem/Database/Editor/ModeRoomLayout.gd
 res://SampleProject/Resources/Tileset.tres
 res://Sneed/sneed.gd
-res://SampleProject/Player.tscn
-res://Managersa/player_manager.tscn
-res://Managersa/player_manager.gd
-res://Managers/player_manager.tscn
-res://Managers/player_manager.gd
-res://Sneed/Managers/player_manager.tscn
-res://Sneed/Managers/player_manager.gd
-res://Sneed/player_manager.tscn
-res://SampleProject/Maps/RightStaircase.tscn
-res://SampleProject/Resources/Settings.tres
