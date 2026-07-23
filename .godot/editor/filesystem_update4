@@ -9,3 +9,5 @@ res://Managers/player_manager.gd
 res://Sneed/Managers/player_manager.tscn
 res://Sneed/Managers/player_manager.gd
 res://Sneed/player_manager.tscn
+res://SampleProject/Maps/RightStaircase.tscn
+res://SampleProject/Resources/Settings.tres
