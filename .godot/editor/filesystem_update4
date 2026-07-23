@@ -1,6 +1,10 @@
-res://SampleProject/Scripts/Game.gd
-res://SampleProject/Game.tscn
-res://SampleProject/Resources/Tileset.tres
-res://SampleProject/Maps/starting_point.tscn
-res://SampleProject/Resources/Settings.tres
 res://SampleProject/Maps/StartingPoint.tscn
+res://SampleProject/Resources/Tileset.tres
+res://SampleProject/Maps/Crossroads.tscn
+res://SampleProject/Resources/Settings.tres
+res://addons/MetroidvaniaSystem/Database/Editor/ModeCellGroup.gd
+res://SampleProject/Maps/Route 1.tscn
+res://addons/MetroidvaniaSystem/Scripts/RoomInstance.gd
+res://SampleProject/Maps/Route 2.tscn
+res://SampleProject/Maps/Route 3.tscn
+res://SampleProject/Maps/Waiting Room.tscn
