@@ -1,6 +1,11 @@
-res://SampleProject/Player.tscn
-res://SampleProject/Resources/Tileset.tres
-res://SampleProject/Scripts/Player.gd
-res://SampleProject/Game.tscn
-res://SampleProject/Objects/Elevator.tscn
 res://Sneed/sneed.tscn
+res://SampleProject/Resources/Tileset.tres
+res://Sneed/sneed.gd
+res://SampleProject/Player.tscn
+res://Managersa/player_manager.tscn
+res://Managersa/player_manager.gd
+res://Managers/player_manager.tscn
+res://Managers/player_manager.gd
+res://Sneed/Managers/player_manager.tscn
+res://Sneed/Managers/player_manager.gd
+res://Sneed/player_manager.tscn

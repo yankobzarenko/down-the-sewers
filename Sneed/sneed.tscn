@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cvpnbvtp4wp7i"]
 
 [ext_resource type="Texture2D" uid="uid://bn5mjg4dgvkbn" path="res://Sneed/crow-man.png" id="1_nq5ig"]
+[ext_resource type="Script" uid="uid://dp6qcn80esa8n" path="res://Sneed/sneed.gd" id="1_sh1xl"]
 [ext_resource type="Texture2D" uid="uid://ycv24tcvocxu" path="res://Sneed/crow-man slash.png" id="2_so78a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nq5ig"]
@@ -113,6 +114,8 @@ _data = {
 }
 
 [node name="Sneed" type="CharacterBody2D" unique_id=2146939766]
+scale = Vector2(1.0055712, 0.98396754)
+script = ExtResource("1_sh1xl")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=363531189]
 position = Vector2(2.25, 19.5)
@@ -132,3 +135,7 @@ frame = 7
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1679305049]
 libraries/ = SubResource("AnimationLibrary_rqeoy")
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=1294840768]
+rotation = -1.5707964
+scale = Vector2(1, 2.480001)
