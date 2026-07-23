@@ -1,1 +1,5 @@
+Node2D
+AnimatableBody2D
+AnimatableBody3D
+RigidBody2D
 TileMapLayer

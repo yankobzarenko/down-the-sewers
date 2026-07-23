@@ -26,7 +26,7 @@ tile_set = ExtResource("1_0svtx")
 [node name="RoomInstance" parent="." unique_id=1182875706 instance=ExtResource("1_45cto")]
 
 [node name="SavePoint" type="Area2D" parent="." unique_id=729023419]
-position = Vector2(444, 222)
+position = Vector2(432, 216)
 script = ExtResource("3_7p5jr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SavePoint" unique_id=2092943413]

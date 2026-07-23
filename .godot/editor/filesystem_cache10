@@ -1,5 +1,5 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1784771742
+::res://::1784813147
 icon.svg::CompressedTexture2D::1696966632735640405::1784701988::1784702149::1::::<><><>0<>0<>df708bbf865afe7e6c6e60313de6c61a<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://addons/::1784764493
 ::res://addons/alignment-tool/::1784764493
@@ -293,13 +293,13 @@ zh-hant.po::Translation::-1::1784701992::0::1::::<><><>0<>0<><>::
 ::res://SampleProject/::1784767097
 Game.tscn::PackedScene::6786581576714978419::1784767097::0::1::::<><><>0<>0<><>::uid://btgvo27tngq4o::::res://SampleProject/Scripts/Game.gd<>uid://xpbhai8nlgtx::::res://SampleProject/Player.tscn<>uid://dch8dyylb7526::::res://addons/MetroidvaniaSystem/Template/Nodes/Minimap.tscn<>uid://wiq0mic5m6is::::res://SampleProject/Sprites/Collectible.png<>uid://bd5w7n7gew76f::::res://SampleProject/Objects/CollectionGridItem.tscn<>uid://dpwli04va881g::::res://SampleProject/Sprites/MapItem.png
 Player.tscn::PackedScene::1645382301411358845::1784767097::0::1::::<><><>0<>0<><>::uid://befxy1ldt1ys1::::res://SampleProject/Scripts/Player.gd<>uid://rmc03br1yacf::::res://SampleProject/Sprites/platformer_sprites_pixelized_0.png
-::res://SampleProject/Maps/::1784771610
-Boss Room.tscn::PackedScene::3016385002751840757::1784767097::0::1::::<><><>0<>0<><>::
+::res://SampleProject/Maps/::1784774721
+Boss Room.tscn::PackedScene::3016385002751840757::1784774721::0::1::::<><><>0<>0<><>::uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres<>uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn
 Corridor.tscn::PackedScene::4985752293229413285::1784701988::0::1::::<><><>0<>0<><>::uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres<>uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn<>uid://c8j6i3fx8p758::::res://SampleProject/Objects/Collectible.tscn
 Crossroads.tscn::PackedScene::8507729036059827454::1784769986::0::1::::<><><>0<>0<><>::uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres<>uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn
-DarkCorridor.tscn::PackedScene::9205637905522873065::1784770075::0::1::::<><><>0<>0<><>::uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres<>uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn
+DarkCorridor.tscn::PackedScene::9205637905522873065::1784772417::0::1::::<><><>0<>0<><>::uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres<>uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn
 DarkPortalRoom.tscn::PackedScene::2784471172761016227::1784704323::0::1::::<><><>0<>0<><>::uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres<>uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn<>uid://cwrf84g5mlucd::::res://SampleProject/Objects/Portal.tscn
-DarkStaircase.tscn::PackedScene::3073263141760453056::1784701988::0::1::::<><><>0<>0<><>::uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres<>uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn<>uid://dgbhua1xw0ckx::::res://SampleProject/Objects/MiniPortal.tscn<>uid://d165fnekqr5ex::::res://SampleProject/Objects/Button.tscn
+DarkStaircase.tscn::PackedScene::3073263141760453056::1784774416::0::1::::<><><>0<>0<><>::uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres<>uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn
 DiceRoom.tscn::PackedScene::159619281814661020::1784701988::0::1::::<><><>0<>0<><>::uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres<>uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn<>uid://ke056546dq4j::::res://SampleProject/Objects/Dice.glb<>uid://cwrf84g5mlucd::::res://SampleProject/Objects/Portal.tscn
 ElevatorRoom.tscn::PackedScene::2991301658141651202::1784701988::0::1::::<><><>0<>0<><>::uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres<>uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn<>uid://cuo3rbw43trj4::::res://SampleProject/Objects/Pipe.tscn<>uid://bex32x8t30k4n::::res://SampleProject/Objects/Elevator.tscn<>uid://0u1nlyd1ld6o::::res://SampleProject/Scripts/SavePoint.gd
 EndingPoint.tscn::PackedScene::1349964541587017090::1784704323::0::1::::<><><>0<>0<><>::uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres<>uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn
@@ -310,18 +310,18 @@ LeftStaircase.tscn::PackedScene::4238191952050854776::1784771494::0::1::::<><><>
 LoopRoom1.tscn::PackedScene::5045792867116769062::1784701988::0::1::::<><><>0<>0<><>::uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn<>uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres<>uid://b7ocxe212putd::::res://SampleProject/Scripts/LoopScript.gd<>uid://c8j6i3fx8p758::::res://SampleProject/Objects/Collectible.tscn
 LoopRoom2.tscn::PackedScene::2465141839054085676::1784701988::0::1::::<><><>0<>0<><>::uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn<>uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres<>uid://b7ocxe212putd::::res://SampleProject/Scripts/LoopScript.gd
 LoopRoom3.tscn::PackedScene::7097821731362858440::1784701988::0::1::::<><><>0<>0<><>::uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn<>uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres<>uid://b7ocxe212putd::::res://SampleProject/Scripts/LoopScript.gd
-MapData.txt::TextFile::-1::1784770185::0::1::::<><><>0<>0<><>::
+MapData.txt::TextFile::-1::1784773328::0::1::::<><><>0<>0<><>::
 PortalRoom.tscn::PackedScene::7170574772712051384::1784701988::0::1::::<><><>0<>0<><>::uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres<>uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn<>uid://cwrf84g5mlucd::::res://SampleProject/Objects/Portal.tscn
-RelicRoom.tscn::PackedScene::6529747996325820864::1784771610::0::1::::<><><>0<>0<><>::uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres<>uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn
+RelicRoom.tscn::PackedScene::6529747996325820864::1784771771::0::1::::<><><>0<>0<><>::uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres<>uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn
 RightStaircase.tscn::PackedScene::8142202152790103164::1784767948::0::1::::<><><>0<>0<><>::uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres<>uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn
 Route 1.tscn::PackedScene::7235816099015758565::1784766608::0::1::::<><><>0<>0<><>::uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres<>uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn
 Route 2.tscn::PackedScene::4227946570587903321::1784766649::0::1::::<><><>0<>0<><>::uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn<>uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres
 Route 3.tscn::PackedScene::7460613606059493605::1784766674::0::1::::<><><>0<>0<><>::uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn<>uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres
 SecretChamber.tscn::PackedScene::1309552566264012299::1784701988::0::1::::<><><>0<>0<><>::uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn<>uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres<>uid://c8j6i3fx8p758::::res://SampleProject/Objects/Collectible.tscn<>uid://dgbhua1xw0ckx::::res://SampleProject/Objects/MiniPortal.tscn
-StartingPoint.tscn::PackedScene::6310584284793361700::1784767295::0::1::::<><><>0<>0<><>::uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres<>uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn<>uid://0u1nlyd1ld6o::::res://SampleProject/Scripts/SavePoint.gd
+StartingPoint.tscn::PackedScene::6310584284793361700::1784774392::0::1::::<><><>0<>0<><>::uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres<>uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn<>uid://0u1nlyd1ld6o::::res://SampleProject/Scripts/SavePoint.gd
 UpperElevatorRoom.tscn::PackedScene::7865685979834454422::1784701988::0::1::::<><><>0<>0<><>::uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres<>uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn<>uid://cwrf84g5mlucd::::res://SampleProject/Objects/Portal.tscn<>uid://bex32x8t30k4n::::res://SampleProject/Objects/Elevator.tscn
 Waiting Room.tscn::PackedScene::7424027530811683699::1784766754::0::1::::<><><>0<>0<><>::uid://bwpcg2opya34n::::res://SampleProject/Resources/Tileset.tres<>uid://bsg0351mx3b4u::::res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn
-::res://SampleProject/Objects/::1784767097
+::res://SampleProject/Objects/::1784774292
 Button.tscn::PackedScene::9049998824255724767::1784701988::0::1::::<><><>0<>0<><>::uid://dagy3gny0c0cg::::res://SampleProject/Sprites/Button.png
 Collectible.tscn::PackedScene::7109550599822375877::1784701988::0::1::::<><><>0<>0<><>::uid://wiq0mic5m6is::::res://SampleProject/Sprites/Collectible.png
 CollectionGridItem.tscn::PackedScene::2660312198990964179::1784701988::0::1::::<><><>0<>0<><>::
@@ -329,11 +329,13 @@ Dice.glb::PackedScene::711719121960049483::1784701988::1784702151::1::::<><><>0<
 Elevator.tscn::PackedScene::2716406298738783287::1784767097::0::1::::<><><>0<>0<><>::uid://c2b8sodh13n7m::::res://SampleProject/Sprites/ElevatorSprite.png
 MapItem.tscn::PackedScene::8929905936690348143::1784701989::0::1::::<><><>0<>0<><>::uid://dpwli04va881g::::res://SampleProject/Sprites/MapItem.png
 MiniPortal.tscn::PackedScene::7582920266729334651::1784701989::0::1::::<><><>0<>0<><>::uid://cargdawan7gao::::res://SampleProject/Sprites/Portal.png
+moving platform.tscn::PackedScene::5138479253254848854::1784774292::0::1::::<><><>0<>0<><>::uid://rqqedbop5p4b::::res://SampleProject/Objects/moving_platform.gd
+moving_platform.gd::GDScript::1227219160743583223::1784774292::0::1::::<>Node2D<><>0<>0<><>::
 Pipe.tscn::PackedScene::6207250050862389643::1784701989::0::1::::<><><>0<>0<><>::uid://c00he1hprcray::::res://SampleProject/Sprites/Pipe.png<>uid://dav4phd4q7vv3::::res://SampleProject/Sprites/PipeWater.png
 Portal.tscn::PackedScene::6352454399230159599::1784701989::0::1::::<><><>0<>0<><>::uid://b6hvngpyjmbfk::::res://SampleProject/Scripts/Portal.gd<>uid://cargdawan7gao::::res://SampleProject/Sprites/Portal.png
-::res://SampleProject/Resources/::1784770372
-Settings.tres::Resource::1083356745091211609::1784770372::0::1::::<><><>0<>0<><>::uid://b23v0vuudcegw::::res://SampleProject/Scripts/CustomElements.gd<>uid://orxlanqpgccv::::res://addons/MetroidvaniaSystem/Scripts/Settings.gd<>uid://bt6s3nd8xo6b::::res://addons/MetroidvaniaSystem/Themes/Exquisite/Theme.tres
-Tileset.tres::TileSet::3961674499261024951::1784764971::0::1::::<><><>0<>0<><>::uid://droyrt0ybqgm7::::res://SampleProject/Sprites/Tiles.png<>uid://cki7wjbeux672::::res://SampleProject/Sprites/DarkTiles.png<>uid://bfjtblf8h62lv::::res://SampleProject/Sprites/MirageTiles.png
+::res://SampleProject/Resources/::1784773328
+Settings.tres::Resource::1083356745091211609::1784773328::0::1::::<><><>0<>0<><>::uid://b23v0vuudcegw::::res://SampleProject/Scripts/CustomElements.gd<>uid://orxlanqpgccv::::res://addons/MetroidvaniaSystem/Scripts/Settings.gd<>uid://bt6s3nd8xo6b::::res://addons/MetroidvaniaSystem/Themes/Exquisite/Theme.tres
+Tileset.tres::TileSet::3961674499261024951::1784771771::0::1::::<><><>0<>0<><>::uid://droyrt0ybqgm7::::res://SampleProject/Sprites/Tiles.png<>uid://cki7wjbeux672::::res://SampleProject/Sprites/DarkTiles.png<>uid://bfjtblf8h62lv::::res://SampleProject/Sprites/MirageTiles.png
 ::res://SampleProject/Scripts/::1784767948
 CustomElements.gd::GDScript::4340642875528609586::1784701989::0::1::::<><><>0<>1<><>::
 Game.gd::GDScript::3733696505747935240::1784724370::0::1::::Game<>Node<><>0<>0<><>::

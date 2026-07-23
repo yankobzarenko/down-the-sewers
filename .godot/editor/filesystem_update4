@@ -1,5 +1,3 @@
-res://SampleProject/Maps/RelicRoom.tscn
-res://SampleProject/Resources/Tileset.tres
-res://SampleProject/Maps/DarkCorridor.tscn
+res://SampleProject/Maps/Boss Room.tscn
 res://SampleProject/Resources/Settings.tres
-res://SampleProject/Maps/DarkStaircase.tscn
+res://SampleProject/Resources/Tileset.tres

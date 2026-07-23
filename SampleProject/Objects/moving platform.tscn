@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cfheac7u425yg"]
+
+[ext_resource type="Script" uid="uid://rqqedbop5p4b" path="res://SampleProject/Objects/moving_platform.gd" id="1_cxfpt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7lyd6"]
+size = Vector2(64, 32)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_uexve"]
+
+[node name="Moving Platform" type="Node2D" unique_id=1058258589]
+script = ExtResource("1_cxfpt")
+offset = Vector2(100, 0)
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=1192196634]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=2019702901]
+shape = SubResource("RectangleShape2D_7lyd6")
+
+[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D" unique_id=40060264]
+scale = Vector2(63.999996, 32)
+texture = SubResource("PlaceholderTexture2D_uexve")
