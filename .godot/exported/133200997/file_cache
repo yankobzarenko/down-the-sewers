@@ -1,0 +1,75 @@
+res://addons/alignment-tool/AlignToolButton.tscn::9920aca73e2b28e840ffe80e0d86e083::1784680704::res://.godot/exported/133200997/export-5bddc6ace893c1147b83cff148bd635a-AlignToolButton.scn
+res://addons/MetroidvaniaSystem/Database/Editor/MapEditor.tscn::3d9474d3381cb6e7f97cc43ce0377d08::1784701989::res://.godot/exported/133200997/export-120c59419f3a224162818ade4da38902-MapEditor.scn
+res://addons/MetroidvaniaSystem/Database/Manage/Manage.tscn::c37dd5075e80adf1d7091cfa29f75c75::1784701989::res://.godot/exported/133200997/export-0cfaaebf2eacd6f4ea28a7a890f0cda6-Manage.scn
+res://addons/MetroidvaniaSystem/Database/Viewer/CollectibleElement.tscn::ba78f3813fcb90b8f2f3b8d4f8dc33ec::1784701989::res://.godot/exported/133200997/export-3d0a473394e06910b7290a6387172bf7-CollectibleElement.scn
+res://addons/MetroidvaniaSystem/Database/Viewer/MapViewer.tscn::2cdbab74bc6358f8e78af99c2591d3f2::1784701989::res://.godot/exported/133200997/export-e0a2d838c8ecd08c46cdc1f1aecb52b3-MapViewer.scn
+res://addons/MetroidvaniaSystem/Database/DatabaseTheme.tres::2d8308599d46365217b45e2171cd568b::1784701989::res://.godot/exported/133200997/export-142feddb7bcb26e578d9bcf0d769ceb9-DatabaseTheme.res
+res://addons/MetroidvaniaSystem/Database/LayerSelector.tscn::b58f64e70c30c454ed336f21d571138c::1784701989::res://.godot/exported/133200997/export-e436efe804895314dc10d89274a09219-LayerSelector.scn
+res://addons/MetroidvaniaSystem/Database/Main.tscn::99c96e7c65ceb9e4ef00be747dd03b4e::1784701989::res://.godot/exported/133200997/export-60f5d223823fdfe31d2a4a03bfc17442-Main.scn
+res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn::bb269cd74175185d7b5944afb88e4298::1784701989::res://.godot/exported/133200997/export-a811b289eabef152c9a2291ce4386002-RoomInstance.scn
+res://addons/MetroidvaniaSystem/Nodes/RoomPreview.tscn::3cecf4221150a39bdd77948f8a4dadf5::1784701989::res://.godot/exported/133200997/export-1611d4e5a3e5f401c7ec5ee5e917fb93-RoomPreview.scn
+res://addons/MetroidvaniaSystem/Nodes/Singleton.tscn::14bf9a8e6cb20fd48c81b9a3803b3aa9::1784701989::res://.godot/exported/133200997/export-4ef6625d6cbab31419c201ca0de07239-Singleton.scn
+res://addons/MetroidvaniaSystem/Template/Nodes/Minimap.tscn::22a23a8dc9bce7fc207110d48f7a2d37::1784701989::res://.godot/exported/133200997/export-d77e8e897d804b434c23cef4e2b525c4-Minimap.scn
+res://addons/MetroidvaniaSystem/Themes/AoS/PlayerLocation.tscn::ec464f4d7d73f5115bbdabfc5bf8ae8d::1784701989::res://.godot/exported/133200997/export-9371f715a1fad4be2c0a56affe3a2d67-PlayerLocation.scn
+res://addons/MetroidvaniaSystem/Themes/AoS/Theme.tres::85002783fbec80b66e9980bd1313b9e7::1784701989::res://.godot/exported/133200997/export-0f7d4ab2b54be8774191ab26f9511327-Theme.res
+res://addons/MetroidvaniaSystem/Themes/BS/PlayerLocation.tscn::ae03859f602aedf5dbf7da018d0f0715::1784701989::res://.godot/exported/133200997/export-46440d03c7d15560541bfc0602741197-PlayerLocation.scn
+res://addons/MetroidvaniaSystem/Themes/BS/Theme.tres::831c829d8d93d92841b206008c3d3f7a::1784701989::res://.godot/exported/133200997/export-5b24fd44be4027938b18d3f95d7bfddb-Theme.res
+res://addons/MetroidvaniaSystem/Themes/EM/PlayerLocation.tscn::41c1a632232addc528ba25ca0dbbb3e3::1784701990::res://.godot/exported/133200997/export-e9cace4100850ffa48680f9754f6c68f-PlayerLocation.scn
+res://addons/MetroidvaniaSystem/Themes/EM/Theme.tres::2418d626b9bd5f7fb4e02993df3cba5e::1784701990::res://.godot/exported/133200997/export-fdf704d4608957466cd9c1c2b44d4074-Theme.res
+res://addons/MetroidvaniaSystem/Themes/Exquisite/PlayerLocation.tscn::e2af4398d4187e143260eb6e56b64669::1784701990::res://.godot/exported/133200997/export-b5f12ef6d51bcc6c97aea7f0aa3834f0-PlayerLocation.scn
+res://addons/MetroidvaniaSystem/Themes/Exquisite/Theme.tres::606a7c7faf81f4dc9cff30875132ce98::1784701990::res://.godot/exported/133200997/export-725571c38c0847dd21cce13332a5c79e-Theme.res
+res://addons/MetroidvaniaSystem/Themes/Fuzzy/PlayerLocation.tscn::5ba4e0f762531b37e9ac2b5f0d7a1ea8::1784701990::res://.godot/exported/133200997/export-ed81c8bd90489e15e4cf6554c5aeda4e-PlayerLocation.scn
+res://addons/MetroidvaniaSystem/Themes/Fuzzy/Theme.tres::b15e0e80af4f1930cc239f003b107718::1784701990::res://.godot/exported/133200997/export-c6601a2168b21b4538a747e84389b19f-Theme.res
+res://addons/MetroidvaniaSystem/Themes/Kenney/PlayerLocation.tscn::4dc628b02503766a962ea0f57d21183e::1784701990::res://.godot/exported/133200997/export-f5ab7ac7d133cb0a3dad85e02cfbb328-PlayerLocation.scn
+res://addons/MetroidvaniaSystem/Themes/Kenney/Theme.tres::070eb509f8dbbe0c7c06f16b55141d3b::1784701990::res://.godot/exported/133200997/export-5d686616b21ccee114616c56a9d034f0-Theme.res
+res://addons/MetroidvaniaSystem/Themes/MF/PlayerLocation.tscn::40142cebf1cee3b64c9a2ea452d5863b::1784701990::res://.godot/exported/133200997/export-9daa727a432bf50156b4030ed2c0c8f6-PlayerLocation.scn
+res://addons/MetroidvaniaSystem/Themes/MF/Theme.tres::6973a28fefd3b3d16dba895cdc4a16ca::1784701990::res://.godot/exported/133200997/export-6a8aaaafff2023449ae7742f04dc3639-Theme.res
+res://addons/MetroidvaniaSystem/Themes/RR/PlayerLocation.tscn::64238bfa79f7d4f965b1904888e7af0f::1784701990::res://.godot/exported/133200997/export-66b3f50fb868e06bbbe0ca85cbc8fccf-PlayerLocation.scn
+res://addons/MetroidvaniaSystem/Themes/RR/Theme.tres::6b05d791c270a6dfa2ec8073b18662c6::1784701990::res://.godot/exported/133200997/export-5ab57a994bea4503eedeb8e22d5012bf-Theme.res
+res://addons/MetroidvaniaSystem/Themes/SH/Theme.tres::f98ca33e5d1a47ec9e8f79f5221ea8d4::1784701991::res://.godot/exported/133200997/export-d069b874ae6c7c6ea9f3b6acbf9cc04a-Theme.res
+res://addons/MetroidvaniaSystem/Themes/SotN/PlayerLocation.tscn::7b80aedc031215bc18f548a5a260bbc5::1784701991::res://.godot/exported/133200997/export-f3d9d4ea2963a548b189bf5211e13de8-PlayerLocation.scn
+res://addons/MetroidvaniaSystem/Themes/SotN/Theme.tres::4ec36aed9a5f13fc94a0e79995ca19ce::1784701991::res://.godot/exported/133200997/export-30a6d54c0bdfd2fd45003d74c7e6bf23-Theme.res
+res://addons/MetroidvaniaSystem/Themes/VoF/PlayerLocation.tscn::77dc959491d554e364c3a9ecf855138e::1784701991::res://.godot/exported/133200997/export-ea0983447529afe26e5f9cfef0f68f7a-PlayerLocation.scn
+res://addons/MetroidvaniaSystem/Themes/VoF/Theme.tres::9aa23719f3cd587d9edafb9354187cef::1784701991::res://.godot/exported/133200997/export-05419ab3f895a2084c1ffc82de8412fd-Theme.res
+res://addons/MetroidvaniaSystem/Themes/Zeric/PlayerLocation.tscn::2a0c79796602f5f798da0a780a6a0789::1784701991::res://.godot/exported/133200997/export-a60df46c5e2ff9001f7191ec0595bcbf-PlayerLocation.scn
+res://addons/MetroidvaniaSystem/Themes/Zeric/Theme.tres::704b1c8107a9744f665a3b22677f712b::1784701991::res://.godot/exported/133200997/export-8fd50a8ea12784f12a0acd03d4c02a1c-Theme.res
+res://SampleProject/Maps/Boss Room.tscn::7d32c9d3c6355520cb4cae45149feecf::1784815788::res://.godot/exported/133200997/export-f9554892f0b9df8a493424dd0718acae-Boss Room.scn
+res://SampleProject/Maps/Corridor.tscn::a27d6d0488bacd366c448d4ab876a68b::1784701988::res://.godot/exported/133200997/export-c07c9213a6fef3246ad578dcc475923b-Corridor.scn
+res://SampleProject/Maps/Crossroads.tscn::76c906759ebca7a895444f54ca9b5b92::1784769986::res://.godot/exported/133200997/export-31b1af3be5d1be85b1618782f25266b0-Crossroads.scn
+res://SampleProject/Maps/DarkCorridor.tscn::46310d921870a7b68f2cc65fe0c66e23::1784817175::res://.godot/exported/133200997/export-6f7d4b3ab49cdddc2b9a100cf5823849-DarkCorridor.scn
+res://SampleProject/Maps/DarkPortalRoom.tscn::fdb98e005f9355f6c48682d44c7939ef::1784704323::res://.godot/exported/133200997/export-99b61eb7e490069ad0fbd25897248bb4-DarkPortalRoom.scn
+res://SampleProject/Maps/DarkStaircase.tscn::da461421ebe78ec9ec26f43659e53232::1784816465::res://.godot/exported/133200997/export-645114a72c14d731a3dbbeeda080191e-DarkStaircase.scn
+res://SampleProject/Maps/DiceRoom.tscn::cefbe32481bdf19c95f5ddac150e70ab::1784701988::res://.godot/exported/133200997/export-8a62099ce99e62097a6b592e858d254f-DiceRoom.scn
+res://SampleProject/Maps/ElevatorRoom.tscn::9a984d1823963b95d85b32eade757a02::1784701988::res://.godot/exported/133200997/export-8384f3b99f1c2136fe255a9fde2743c1-ElevatorRoom.scn
+res://SampleProject/Maps/EndingPoint.tscn::bc6e425e369228c757c45e3d85a8dd6a::1784704323::res://.godot/exported/133200997/export-39440cce802db362bedccdce2cb4b266-EndingPoint.scn
+res://SampleProject/Maps/Junction.tscn::92bb7c85bfb14846170032717a6f8de5::1784701988::res://.godot/exported/133200997/export-35f00a398edeefdc91e5d0f6dc58d1aa-Junction.scn
+res://SampleProject/Maps/LavaCorridor.tscn::b9b76bce903d3f158a5360f325e669e8::1784701988::res://.godot/exported/133200997/export-56b725bc32811d35e43187c11cd30638-LavaCorridor.scn
+res://SampleProject/Maps/LavaCorridorAfterwater.tscn::08bd6ea94420a730b0273ada95221819::1784701988::res://.godot/exported/133200997/export-30f79a90fbac39312b156b3689f5a86c-LavaCorridorAfterwater.scn
+res://SampleProject/Maps/LeftStaircase.tscn::f0415cfe9fbd828116e2717ebafe4f1b::1784771494::res://.godot/exported/133200997/export-5f947ada5a163fb79c96511731a836ae-LeftStaircase.scn
+res://SampleProject/Maps/LoopRoom1.tscn::a58e49c9f108a2a44e957148243a2567::1784701988::res://.godot/exported/133200997/export-9b107a68491cf1090c2fbcb8a932ebe2-LoopRoom1.scn
+res://SampleProject/Maps/LoopRoom2.tscn::ef9c968bb182b87cca6ee7c15d267423::1784701988::res://.godot/exported/133200997/export-5637637a2c037a8152fc96371497a8e2-LoopRoom2.scn
+res://SampleProject/Maps/LoopRoom3.tscn::54e9c593682ed144700a4af22a60b711::1784701988::res://.godot/exported/133200997/export-338ac3d340c8c8b02059cce5f42463aa-LoopRoom3.scn
+res://SampleProject/Maps/PortalRoom.tscn::a17507b78855f9a032afbd8e1072b10b::1784701988::res://.godot/exported/133200997/export-bea81b8fefd9fcdd624aa919c4cde9a7-PortalRoom.scn
+res://SampleProject/Maps/RelicRoom.tscn::020ed68876f188ae0284371c242bd363::1784815469::res://.godot/exported/133200997/export-161b2c6733017c53dc14681968f077ad-RelicRoom.scn
+res://SampleProject/Maps/RightStaircase.tscn::7fa6f095455090c2375b75307b45baa1::1784767948::res://.godot/exported/133200997/export-ee216dcd4ab39cf0304cc8e51239f93e-RightStaircase.scn
+res://SampleProject/Maps/Route 1.tscn::2f6ea75fc2f3d525609e7dfd32236eb2::1784766608::res://.godot/exported/133200997/export-fa3afb0d632032e247bcb41738a3a15b-Route 1.scn
+res://SampleProject/Maps/Route 2.tscn::5d3b254fa166e7c8694aa26c3bd5b191::1784766649::res://.godot/exported/133200997/export-b8357a6941ff7659f19efa32bba31481-Route 2.scn
+res://SampleProject/Maps/Route 3.tscn::a46422341138bfa38e11a7c2044ec9d7::1784766674::res://.godot/exported/133200997/export-b55bf92dc699ad53f758d3ecb272a3f1-Route 3.scn
+res://SampleProject/Maps/SecretChamber.tscn::918eefe4b1c0ef878f0e586c440de53c::1784701988::res://.godot/exported/133200997/export-ae51d8680210f4cb9a79823402d7b71d-SecretChamber.scn
+res://SampleProject/Maps/StartingPoint.tscn::215c90033e6d43f225a6ac13035bc4f2::1784813836::res://.godot/exported/133200997/export-08efe2da29944ca2eacbe3a23382e21a-StartingPoint.scn
+res://SampleProject/Maps/UpperElevatorRoom.tscn::6d34192accc08af920a66b570c171658::1784701988::res://.godot/exported/133200997/export-2652ab0e6dfdb0f63f6c7b0b20f9c03d-UpperElevatorRoom.scn
+res://SampleProject/Maps/Waiting Room.tscn::0b0d71b0b8f17022a50423566c7f71fd::1784766754::res://.godot/exported/133200997/export-86cfea0715dfd3cae2f0d47161b46e2e-Waiting Room.scn
+res://SampleProject/Objects/Button.tscn::26587e01d478e6731137bfb23f5d92ef::1784701988::res://.godot/exported/133200997/export-b2f9dbc36cd86ab230e943ae1eb6b4fd-Button.scn
+res://SampleProject/Objects/Collectible.tscn::db8a4226c332c1c8b13c79642ddfd57d::1784701988::res://.godot/exported/133200997/export-6e97b5f6f1941dfa845934a004478609-Collectible.scn
+res://SampleProject/Objects/CollectionGridItem.tscn::9666d8e34903531d4abcc9793eed3817::1784701988::res://.godot/exported/133200997/export-1c9c8258b8a322826c7cbb15822301a0-CollectionGridItem.scn
+res://SampleProject/Objects/Elevator.tscn::c8fc0e271c18b5f55f144299a6b314fc::1784814118::res://.godot/exported/133200997/export-04a5521b00019157219b751750d6e912-Elevator.scn
+res://SampleProject/Objects/MapItem.tscn::2910ac19e302e00749a834b08af3b781::1784701989::res://.godot/exported/133200997/export-5f2cf4bda303643f0236a9d4d5bb768e-MapItem.scn
+res://SampleProject/Objects/MiniPortal.tscn::7e4658477686337ede2b5c03f309276f::1784701989::res://.godot/exported/133200997/export-b5bb27774c330a84c0bdb49f5c7b4019-MiniPortal.scn
+res://SampleProject/Objects/moving platform.tscn::e454880e9d6ae88bf4d68b2f77b5e7b9::1784774292::res://.godot/exported/133200997/export-82e700d4d8ba37065f2da0f4637679bb-moving platform.scn
+res://SampleProject/Objects/Pipe.tscn::fd4eeafd257ebd69669a767c210ff515::1784701989::res://.godot/exported/133200997/export-0c3e87734da5f630b2a39592af61d87d-Pipe.scn
+res://SampleProject/Objects/Portal.tscn::0f7d7e873bc77591da28160f4f0706da::1784701989::res://.godot/exported/133200997/export-e1e84b536d30019ebd047bada831d051-Portal.scn
+res://SampleProject/Objects/crow.tscn::33534192a91249f61560a554231b08fd::1784818474::res://.godot/exported/133200997/export-21b2e27e1c42d44cb0eb888b3ce6002d-crow.scn
+res://SampleProject/Resources/Settings.tres::03f37a582a62e8f349a9c1a3a7ead44b::1784815788::res://.godot/exported/133200997/export-f547614cdda16ca4e5b2df11346d895b-Settings.res
+res://SampleProject/Resources/Tileset.tres::9d54aa212f2164397cfffed6044f7441::1784814363::res://.godot/exported/133200997/export-6be2990247bfc13b31aad4729d28f16e-Tileset.res
+res://SampleProject/Game.tscn::2e61537055b5bf8b0617f9fa50996d41::1784814118::res://.godot/exported/133200997/export-1544d25e767014e38915e7dd0ffb60d0-Game.scn
+res://SampleProject/Player.tscn::3a0d7fd7fcd0560a1fbe30bc9d64038b::1784814118::res://.godot/exported/133200997/export-b0bed83d5160fe6547b62a3cb7fd537d-Player.scn
