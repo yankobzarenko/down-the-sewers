@@ -27,6 +27,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 MetSys="*res://addons/MetroidvaniaSystem/Nodes/Singleton.tscn"
+PlayerManager="*uid://c53xeca21vs4h"
 
 [debug]
 
