@@ -41,6 +41,7 @@ var update_timer := 0.0
 
 func _ready() -> void:
 	#init stuff
+	MetSys.register_storable_object(self)
 	print("Enemy initialized")
 	velocity.y = 0
 	#ai stuff
@@ -61,8 +62,8 @@ func _physics_process(delta: float) -> void:
 		State.ATTACK:      _state_attack()
 		State.RETURN:      _state_return(delta)
  
-	_looking()
-	_apply_gravity(delta)
+	#_looking()
+	handle_gravity(delta)
 	move_and_slide()
 
 # --------------------
