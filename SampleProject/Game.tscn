@@ -155,6 +155,7 @@ func _input(event: InputEvent) -> void:
 					propagate_call(&\"update_collectible\")
 "
 
+<<<<<<< HEAD
 [node name="Game" type="Node2D" unique_id=1178332949]
 script = ExtResource("1_xdpfu")
 starting_map = "uid://cv55nv1c2sbiq"
@@ -168,6 +169,21 @@ position = Vector2(368, 248)
 [node name="UI" type="CanvasLayer" parent="." unique_id=142824473]
 
 [node name="Minimap" parent="UI" unique_id=626693812 instance=ExtResource("3_a3gfy")]
+=======
+[node name="Game" type="Node2D" unique_id=470344802]
+script = ExtResource("1_xdpfu")
+starting_map = "uid://cv55nv1c2sbiq"
+
+[node name="Player" parent="." unique_id=281818864 groups=["player"] instance=ExtResource("2_bam1a")]
+unique_name_in_owner = true
+position = Vector2(368, 248)
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=431908881]
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=508876535]
+
+[node name="Minimap" parent="UI" unique_id=473634829 instance=ExtResource("3_a3gfy")]
+>>>>>>> main
 unique_name_in_owner = true
 anchors_preset = 1
 anchor_left = 1.0
@@ -179,7 +195,11 @@ offset_bottom = 104.0
 grow_horizontal = 0
 display_player_location = true
 
+<<<<<<< HEAD
 [node name="Background" type="Panel" parent="UI/Minimap" unique_id=188179953]
+=======
+[node name="Background" type="Panel" parent="UI/Minimap" unique_id=714210483]
+>>>>>>> main
 show_behind_parent = true
 layout_mode = 1
 anchors_preset = 15
@@ -188,7 +208,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+<<<<<<< HEAD
 [node name="MapWindow" type="Panel" parent="UI" unique_id=1604285764]
+=======
+[node name="MapWindow" type="Panel" parent="UI" unique_id=549550923]
+>>>>>>> main
 visible = false
 clip_contents = true
 anchors_preset = 8
@@ -204,14 +228,22 @@ grow_horizontal = 2
 grow_vertical = 2
 script = SubResource("GDScript_u7odr")
 
+<<<<<<< HEAD
 [node name="Percent" type="Label" parent="UI/MapWindow" unique_id=788655331]
+=======
+[node name="Percent" type="Label" parent="UI/MapWindow" unique_id=1505518153]
+>>>>>>> main
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
 text = "0%"
 script = SubResource("GDScript_66suq")
 
+<<<<<<< HEAD
 [node name="Label" type="Label" parent="UI/MapWindow" unique_id=1375317607]
+=======
+[node name="Label" type="Label" parent="UI/MapWindow" unique_id=1975909850]
+>>>>>>> main
 z_index = 5
 layout_mode = 1
 anchors_preset = 2
@@ -223,13 +255,21 @@ grow_vertical = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_vdqrf")
 text = "Press D to toggle delta vector"
 
+<<<<<<< HEAD
 [node name="TopDraw" type="Control" parent="UI/MapWindow" unique_id=1355931101]
+=======
+[node name="TopDraw" type="Control" parent="UI/MapWindow" unique_id=1158000280]
+>>>>>>> main
 z_index = 5
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
+<<<<<<< HEAD
 [node name="CollectionGrid" type="PanelContainer" parent="UI" unique_id=1624423602]
+=======
+[node name="CollectionGrid" type="PanelContainer" parent="UI" unique_id=774093686]
+>>>>>>> main
 visible = false
 offset_left = 85.0
 offset_top = 81.0
@@ -237,6 +277,7 @@ offset_right = 153.0
 offset_bottom = 224.0
 script = SubResource("GDScript_lpbfn")
 
+<<<<<<< HEAD
 [node name="CollectionGrid" type="HBoxContainer" parent="UI/CollectionGrid" unique_id=1417700841]
 layout_mode = 2
 
@@ -244,79 +285,146 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="Label" type="Label" parent="UI/CollectionGrid/CollectionGrid/VBoxContainer" unique_id=913282694]
+=======
+[node name="CollectionGrid" type="HBoxContainer" parent="UI/CollectionGrid" unique_id=1081295543]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/CollectionGrid/CollectionGrid" unique_id=343272678]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="UI/CollectionGrid/CollectionGrid/VBoxContainer" unique_id=1085813516]
+>>>>>>> main
 layout_mode = 2
 text = "D"
 horizontal_alignment = 1
 
+<<<<<<< HEAD
 [node name="CollectionGridItem" parent="UI/CollectionGrid/CollectionGrid/VBoxContainer" unique_id=1717642114 instance=ExtResource("4_uuja8")]
+=======
+[node name="CollectionGridItem" parent="UI/CollectionGrid/CollectionGrid/VBoxContainer" unique_id=188237501 instance=ExtResource("4_uuja8")]
+>>>>>>> main
 layout_mode = 2
 texture = ExtResource("3_kng3d")
 id = "StartingPoint/./Collectible"
 
+<<<<<<< HEAD
 [node name="CollectionGridItem2" parent="UI/CollectionGrid/CollectionGrid/VBoxContainer" unique_id=933954994 instance=ExtResource("4_uuja8")]
+=======
+[node name="CollectionGridItem2" parent="UI/CollectionGrid/CollectionGrid/VBoxContainer" unique_id=1902789383 instance=ExtResource("4_uuja8")]
+>>>>>>> main
 layout_mode = 2
 texture = ExtResource("3_kng3d")
 id = "RelicRoom/./Collectible"
 
+<<<<<<< HEAD
 [node name="CollectionGridItem3" parent="UI/CollectionGrid/CollectionGrid/VBoxContainer" unique_id=372145636 instance=ExtResource("4_uuja8")]
+=======
+[node name="CollectionGridItem3" parent="UI/CollectionGrid/CollectionGrid/VBoxContainer" unique_id=937993146 instance=ExtResource("4_uuja8")]
+>>>>>>> main
 layout_mode = 2
 texture = ExtResource("3_kng3d")
 id = "Corridor/./Collectible"
 
+<<<<<<< HEAD
 [node name="CollectionGridItem4" parent="UI/CollectionGrid/CollectionGrid/VBoxContainer" unique_id=2099129842 instance=ExtResource("4_uuja8")]
+=======
+[node name="CollectionGridItem4" parent="UI/CollectionGrid/CollectionGrid/VBoxContainer" unique_id=1333089932 instance=ExtResource("4_uuja8")]
+>>>>>>> main
 layout_mode = 2
 texture = ExtResource("3_kng3d")
 id = "lava_orb"
 
+<<<<<<< HEAD
 [node name="CollectionGridItem5" parent="UI/CollectionGrid/CollectionGrid/VBoxContainer" unique_id=1452117727 instance=ExtResource("4_uuja8")]
+=======
+[node name="CollectionGridItem5" parent="UI/CollectionGrid/CollectionGrid/VBoxContainer" unique_id=339269503 instance=ExtResource("4_uuja8")]
+>>>>>>> main
 layout_mode = 2
 texture = ExtResource("6_lpbfn")
 id = "RightStaircase/./MapItem"
 
+<<<<<<< HEAD
 [node name="VBoxContainer2" type="VBoxContainer" parent="UI/CollectionGrid/CollectionGrid" unique_id=2088055249]
 layout_mode = 2
 
 [node name="Label" type="Label" parent="UI/CollectionGrid/CollectionGrid/VBoxContainer2" unique_id=553431216]
+=======
+[node name="VBoxContainer2" type="VBoxContainer" parent="UI/CollectionGrid/CollectionGrid" unique_id=1756438992]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="UI/CollectionGrid/CollectionGrid/VBoxContainer2" unique_id=2005091910]
+>>>>>>> main
 layout_mode = 2
 text = "S"
 horizontal_alignment = 1
 
+<<<<<<< HEAD
 [node name="CollectionGridItem5" parent="UI/CollectionGrid/CollectionGrid/VBoxContainer2" unique_id=1167136749 instance=ExtResource("4_uuja8")]
+=======
+[node name="CollectionGridItem5" parent="UI/CollectionGrid/CollectionGrid/VBoxContainer2" unique_id=683932233 instance=ExtResource("4_uuja8")]
+>>>>>>> main
 layout_mode = 2
 texture = ExtResource("3_kng3d")
 id = "SecretChamber/./Collectible"
 
+<<<<<<< HEAD
 [node name="CollectionGridItem6" parent="UI/CollectionGrid/CollectionGrid/VBoxContainer2" unique_id=295192492 instance=ExtResource("4_uuja8")]
+=======
+[node name="CollectionGridItem6" parent="UI/CollectionGrid/CollectionGrid/VBoxContainer2" unique_id=382815482 instance=ExtResource("4_uuja8")]
+>>>>>>> main
 layout_mode = 2
 texture = ExtResource("3_kng3d")
 id = "LoopRoom1/./Collectible"
 
+<<<<<<< HEAD
 [node name="VBoxContainer3" type="VBoxContainer" parent="UI/CollectionGrid/CollectionGrid" unique_id=152044634]
 layout_mode = 2
 
 [node name="Label2" type="Label" parent="UI/CollectionGrid/CollectionGrid/VBoxContainer3" unique_id=1108925756]
+=======
+[node name="VBoxContainer3" type="VBoxContainer" parent="UI/CollectionGrid/CollectionGrid" unique_id=1625126280]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="UI/CollectionGrid/CollectionGrid/VBoxContainer3" unique_id=1973295996]
+>>>>>>> main
 layout_mode = 2
 text = "R"
 horizontal_alignment = 1
 
+<<<<<<< HEAD
 [node name="CollectionGridItem5" parent="UI/CollectionGrid/CollectionGrid/VBoxContainer3" unique_id=1020189192 instance=ExtResource("4_uuja8")]
+=======
+[node name="CollectionGridItem5" parent="UI/CollectionGrid/CollectionGrid/VBoxContainer3" unique_id=801841186 instance=ExtResource("4_uuja8")]
+>>>>>>> main
 layout_mode = 2
 texture = ExtResource("3_kng3d")
 id = "random_collectible"
 
+<<<<<<< HEAD
 [node name="HBoxContainer" type="HBoxContainer" parent="UI" unique_id=549938208]
+=======
+[node name="HBoxContainer" type="HBoxContainer" parent="UI" unique_id=1226286560]
+>>>>>>> main
 offset_left = 8.0
 offset_top = 8.0
 offset_right = 48.0
 offset_bottom = 34.0
 
+<<<<<<< HEAD
 [node name="TextureRect" type="TextureRect" parent="UI/HBoxContainer" unique_id=1845997822]
+=======
+[node name="TextureRect" type="TextureRect" parent="UI/HBoxContainer" unique_id=1944182922]
+>>>>>>> main
 layout_mode = 2
 texture = ExtResource("3_kng3d")
 expand_mode = 2
 stretch_mode = 5
 
+<<<<<<< HEAD
 [node name="CollectibleCount" type="Label" parent="UI/HBoxContainer" unique_id=1438876860]
+=======
+[node name="CollectibleCount" type="Label" parent="UI/HBoxContainer" unique_id=857638338]
+>>>>>>> main
 unique_name_in_owner = true
 layout_mode = 2
 text = "0"
