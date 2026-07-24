@@ -1,0 +1,18 @@
+*.cfg
+.godot/uid_cache.bin
+.godot/mono/metadata/ide_messaging_meta.txt
+.godot/imported/crow-man.png-6c4a71e587640a62c9d41483a78deaa1.md5
+.godot/imported/crow-man.png-6c4a71e587640a62c9d41483a78deaa1.ctex
+.godot/imported/crow-man slash.png-7ea6ec9fcf47427909a564510bf713c1.md5
+.godot/imported/crow-man slash.png-7ea6ec9fcf47427909a564510bf713c1.ctex
+.godot/editor/script_editor_cache.cfg
+.godot/editor/recent_dirs
+.godot/editor/project_metadata.cfg
+.godot/editor/Player.tscn-editstate-b0bed83d5160fe6547b62a3cb7fd537d.cfg
+.godot/editor/filesystem_update4
+.godot/editor/filesystem_cache10
+.godot/editor/favorites.Node
+.godot/editor/editor_script_doc_cache.res
+.godot/editor/editor_layout.cfg
+.godot/editor/create_recent.Node
+*.cfg
