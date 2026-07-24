@@ -2,21 +2,16 @@
 
 [ext_resource type="Script" uid="uid://na6x1tyaixgy" path="res://SampleProject/Objects/crow.gd" id="1_4r35s"]
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_x52qb"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1cn51"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_swv1q"]
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_swv1q"]
 
-[node name="Area2D" type="Area2D" unique_id=1742935301]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1589600813]
 script = ExtResource("1_4r35s")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1172020312]
-scale = Vector2(64, 64)
-texture = SubResource("PlaceholderTexture2D_x52qb")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=698810316]
+scale = Vector2(0.040009845, 0.040009845)
+shape = SubResource("RectangleShape2D_1cn51")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1609482968]
-scale = Vector2(3, 3)
-shape = SubResource("RectangleShape2D_swv1q")
-
-[node name="Timer" type="Timer" parent="." unique_id=1834669913]
-
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1117290070]
+texture = SubResource("PlaceholderTexture2D_swv1q")

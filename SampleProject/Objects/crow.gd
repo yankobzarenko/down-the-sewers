@@ -1,12 +1,16 @@
-extends Area2D
+extends CharacterBody2D
 
 @export var speed := 350.0
 @export var steer_force := 50.0
 
-var velocity := Vector2.ZERO
 var acceleration := Vector2.ZERO
 var target: Node2D
 var exploded := false
+
+func _ready():
+	if MetSys.register_storable_object(self):
+		queue_free()
+		return
 
 func start(_transform: Transform2D, _target: Node2D):
 	global_transform = _transform
@@ -48,7 +52,6 @@ func explode():
 		return
 
 	exploded = true
-	monitoring = false
 	set_physics_process(false)
 
 	$Particles2D.emitting = false
