@@ -22,6 +22,13 @@ var prev_on_floor: bool
 var airtime: float = 0
 var speed: float = SPEED_MIN
 
+var is_dodging = false
+var dodge_cooldown = false
+var dodge_timer = 0.0
+var dodge_cooldown_timer = 0.0
+const DODGE_DURATION = 0.2
+const DODGE_COOLDOWN = 0.75
+
 func _ready() -> void:
 	on_enter()
 
@@ -64,8 +71,26 @@ func _physics_process(delta: float) -> void:
 		speed = SPEED_MIN
 	
 	if &"dash" in abilities and Input.is_action_just_pressed("dash"):
-		position.x += direction * 150.0
+		is_dodging = true
+		dodge_cooldown = true
+		dodge_timer = DODGE_DURATION
+		dodge_cooldown_timer = DODGE_COOLDOWN
+	
+	if is_dodging:
+		if dodge_timer < 1.0:
+			velocity.x = direction * speed * 3.0
+		if dodge_timer >= 1.0:
+			velocity.x = direction * speed * 1.5
+		dodge_timer -= delta
+		if dodge_timer <= 0.0:
+			is_dodging = false
 
+	if dodge_cooldown:
+		dodge_cooldown_timer -= delta
+		if dodge_cooldown_timer <= 0.0:
+			dodge_cooldown = false
+
+	
 	prev_on_floor = is_on_floor()
 	move_and_slide()
 	
