@@ -15,7 +15,7 @@ func _ready() -> void:
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group(&\"player\"):
 		# Add ability, store object and remove the node.
-		body.abilities.append(&\"dash\")
+		body.abilities.append(&\"double_jump\")
 		MetSys.store_object(self)
 		queue_free()
 "
@@ -40,14 +40,14 @@ tile_set = ExtResource("1_x7s6o")
 
 [node name="RoomInstance" parent="." unique_id=792063801 instance=ExtResource("2_113wl")]
 
-[node name="Ability" type="Area2D" parent="RoomInstance" unique_id=1152449529]
-position = Vector2(208, 279)
+[node name="Ability" type="Area2D" parent="." unique_id=1812060367]
+position = Vector2(209, 276)
 script = SubResource("GDScript_gqq55")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RoomInstance/Ability" unique_id=1383357869]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ability" unique_id=780496883]
 shape = SubResource("RectangleShape2D_pobwj")
 
-[node name="Label" type="Label" parent="RoomInstance/Ability" unique_id=931598082]
+[node name="Label" type="Label" parent="Ability" unique_id=201328327]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -59,8 +59,7 @@ offset_right = 50.0
 offset_bottom = 13.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "Dash"
-horizontal_alignment = 1
+text = "Double Jump"
 metadata/_edit_use_anchors_ = true
 
-[connection signal="body_entered" from="RoomInstance/Ability" to="RoomInstance/Ability" method="_on_body_entered"]
+[connection signal="body_entered" from="Ability" to="Ability" method="_on_body_entered"]
