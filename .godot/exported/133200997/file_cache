@@ -36,7 +36,7 @@ res://addons/MetroidvaniaSystem/Themes/Zeric/Theme.tres::704b1c8107a9744f665a3b2
 res://SampleProject/Maps/Boss Room.tscn::7d32c9d3c6355520cb4cae45149feecf::1784815788::res://.godot/exported/133200997/export-f9554892f0b9df8a493424dd0718acae-Boss Room.scn
 res://SampleProject/Maps/Corridor.tscn::a27d6d0488bacd366c448d4ab876a68b::1784701988::res://.godot/exported/133200997/export-c07c9213a6fef3246ad578dcc475923b-Corridor.scn
 res://SampleProject/Maps/Crossroads.tscn::76c906759ebca7a895444f54ca9b5b92::1784769986::res://.godot/exported/133200997/export-31b1af3be5d1be85b1618782f25266b0-Crossroads.scn
-res://SampleProject/Maps/DarkCorridor.tscn::46310d921870a7b68f2cc65fe0c66e23::1784817175::res://.godot/exported/133200997/export-6f7d4b3ab49cdddc2b9a100cf5823849-DarkCorridor.scn
+res://SampleProject/Maps/DarkCorridor.tscn::efdbc3486a5bb70c1e515bd4f73e166b::1784851840::res://.godot/exported/133200997/export-6f7d4b3ab49cdddc2b9a100cf5823849-DarkCorridor.scn
 res://SampleProject/Maps/DarkPortalRoom.tscn::fdb98e005f9355f6c48682d44c7939ef::1784704323::res://.godot/exported/133200997/export-99b61eb7e490069ad0fbd25897248bb4-DarkPortalRoom.scn
 res://SampleProject/Maps/DarkStaircase.tscn::da461421ebe78ec9ec26f43659e53232::1784816465::res://.godot/exported/133200997/export-645114a72c14d731a3dbbeeda080191e-DarkStaircase.scn
 res://SampleProject/Maps/DiceRoom.tscn::cefbe32481bdf19c95f5ddac150e70ab::1784701988::res://.godot/exported/133200997/export-8a62099ce99e62097a6b592e858d254f-DiceRoom.scn
@@ -50,7 +50,7 @@ res://SampleProject/Maps/LoopRoom1.tscn::a58e49c9f108a2a44e957148243a2567::17847
 res://SampleProject/Maps/LoopRoom2.tscn::ef9c968bb182b87cca6ee7c15d267423::1784701988::res://.godot/exported/133200997/export-5637637a2c037a8152fc96371497a8e2-LoopRoom2.scn
 res://SampleProject/Maps/LoopRoom3.tscn::54e9c593682ed144700a4af22a60b711::1784701988::res://.godot/exported/133200997/export-338ac3d340c8c8b02059cce5f42463aa-LoopRoom3.scn
 res://SampleProject/Maps/PortalRoom.tscn::a17507b78855f9a032afbd8e1072b10b::1784701988::res://.godot/exported/133200997/export-bea81b8fefd9fcdd624aa919c4cde9a7-PortalRoom.scn
-res://SampleProject/Maps/RelicRoom.tscn::020ed68876f188ae0284371c242bd363::1784815469::res://.godot/exported/133200997/export-161b2c6733017c53dc14681968f077ad-RelicRoom.scn
+res://SampleProject/Maps/RelicRoom.tscn::186f1eda7b4f62af090f1cdb13fbd7ab::1784851868::res://.godot/exported/133200997/export-161b2c6733017c53dc14681968f077ad-RelicRoom.scn
 res://SampleProject/Maps/RightStaircase.tscn::7fa6f095455090c2375b75307b45baa1::1784767948::res://.godot/exported/133200997/export-ee216dcd4ab39cf0304cc8e51239f93e-RightStaircase.scn
 res://SampleProject/Maps/Route 1.tscn::2f6ea75fc2f3d525609e7dfd32236eb2::1784766608::res://.godot/exported/133200997/export-fa3afb0d632032e247bcb41738a3a15b-Route 1.scn
 res://SampleProject/Maps/Route 2.tscn::5d3b254fa166e7c8694aa26c3bd5b191::1784766649::res://.godot/exported/133200997/export-b8357a6941ff7659f19efa32bba31481-Route 2.scn
@@ -68,8 +68,8 @@ res://SampleProject/Objects/MiniPortal.tscn::7e4658477686337ede2b5c03f309276f::1
 res://SampleProject/Objects/moving platform.tscn::e454880e9d6ae88bf4d68b2f77b5e7b9::1784774292::res://.godot/exported/133200997/export-82e700d4d8ba37065f2da0f4637679bb-moving platform.scn
 res://SampleProject/Objects/Pipe.tscn::fd4eeafd257ebd69669a767c210ff515::1784701989::res://.godot/exported/133200997/export-0c3e87734da5f630b2a39592af61d87d-Pipe.scn
 res://SampleProject/Objects/Portal.tscn::0f7d7e873bc77591da28160f4f0706da::1784701989::res://.godot/exported/133200997/export-e1e84b536d30019ebd047bada831d051-Portal.scn
-res://SampleProject/Objects/crow.tscn::33534192a91249f61560a554231b08fd::1784818474::res://.godot/exported/133200997/export-21b2e27e1c42d44cb0eb888b3ce6002d-crow.scn
+res://SampleProject/Objects/crow.tscn::33534192a91249f61560a554231b08fd::1784851014::res://.godot/exported/133200997/export-21b2e27e1c42d44cb0eb888b3ce6002d-crow.scn
 res://SampleProject/Resources/Settings.tres::03f37a582a62e8f349a9c1a3a7ead44b::1784815788::res://.godot/exported/133200997/export-f547614cdda16ca4e5b2df11346d895b-Settings.res
-res://SampleProject/Resources/Tileset.tres::9d54aa212f2164397cfffed6044f7441::1784814363::res://.godot/exported/133200997/export-6be2990247bfc13b31aad4729d28f16e-Tileset.res
+res://SampleProject/Resources/Tileset.tres::9d54aa212f2164397cfffed6044f7441::1784851840::res://.godot/exported/133200997/export-6be2990247bfc13b31aad4729d28f16e-Tileset.res
 res://SampleProject/Game.tscn::2e61537055b5bf8b0617f9fa50996d41::1784814118::res://.godot/exported/133200997/export-1544d25e767014e38915e7dd0ffb60d0-Game.scn
 res://SampleProject/Player.tscn::3a0d7fd7fcd0560a1fbe30bc9d64038b::1784814118::res://.godot/exported/133200997/export-b0bed83d5160fe6547b62a3cb7fd537d-Player.scn
