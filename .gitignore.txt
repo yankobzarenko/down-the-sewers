@@ -17,4 +17,5 @@
 .godot/editor/editor_layout.cfg
 .godot/editor/script_editor_cache.cfg
 .godot/mono/metadata/ide_messaging_meta.txt
+DowntheSewers/downthesewers.exe
 *.cfg
