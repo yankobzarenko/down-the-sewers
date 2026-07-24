@@ -1,5 +1,6 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1784855533
+::res://::1784855661
+.gitignore.txt::TextFile::-1::1784855590::0::1::::<><><>0<>0<><>::
 export_presets.cfg::TextFile::-1::1784854847::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::1696966632735640405::1784854847::1784855180::1::::<><><>0<>0<>df708bbf865afe7e6c6e60313de6c61a<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile::-1::1784819318::0::1::::<><><>0<>0<><>::
