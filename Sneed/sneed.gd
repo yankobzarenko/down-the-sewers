@@ -32,7 +32,6 @@ var investigate_timer := 0.0
 var investigate_position: Vector2
 var return_position: Vector2
 var target: Node2D
-var gravity: float = ProjectSettings.get_setting("physics/3d/default_gravity")
 var update_timer := 0.0
 
 # --------------------
@@ -62,7 +61,7 @@ func _physics_process(delta: float) -> void:
 		State.ATTACK:      _state_attack()
 		State.RETURN:      _state_return(delta)
  
-	#_looking()
+	_looking()
 	handle_gravity(delta)
 	move_and_slide()
 
@@ -196,11 +195,6 @@ func _update_path(delta):
 		_update_agent_target()
 		update_timer = update_interval
  
-func _apply_gravity(delta: float) -> void:
-	if not is_on_floor():
-		velocity.y -= gravity * delta
-	else:
-		velocity.y = 0.0
  
 # --------------------
 # VISION
@@ -212,15 +206,12 @@ func _looking() -> void:
 	if not target:
 		return
  
-	var to_player = (target.global_transform.origin - global_transform.origin).normalized()
-	var forward = -global_transform.x
-	var angle_deg = rad_to_deg(acos(clamp(forward.dot(to_player), -1.0, 1.0)))
-	if angle_deg > VIEW_ANGLE * 0.5:
+	if velocity.x > 1:
+		self.flip_h = false
+	elif velocity.x < -1:
+		self.flip_h = true
 		return
  
-	var ray_forward = -vision_ray.global_transform.x
-	var new_dir = ray_forward.slerp(to_player, SMOOTHING_FACTOR).normalized()
-	vision_ray.look_at(vision_ray.global_transform.origin + new_dir)
  
 # --------------------
 # SOUND
