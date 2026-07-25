@@ -112,6 +112,9 @@ _data = {
 &"melee": SubResource("Animation_rfopg")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x52qb"]
+size = Vector2(20, 28)
+
 [node name="Player" type="CharacterBody2D" unique_id=217121204]
 z_index = 1
 script = ExtResource("1_ecbsx")
@@ -132,3 +135,10 @@ frame = 64
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=901582910]
 libraries/ = SubResource("AnimationLibrary_rqeoy")
+
+[node name="ATTACK" type="Area2D" parent="." unique_id=1493932449]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ATTACK" unique_id=100330573]
+position = Vector2(31, 14)
+shape = SubResource("RectangleShape2D_x52qb")
+disabled = true
