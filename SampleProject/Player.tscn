@@ -127,7 +127,8 @@ shape = SubResource("RectangleShape2D_yj7bn")
 [node name="ATTACK" type="Area2D" parent="." unique_id=1493932449]
 position = Vector2(2.25, 7.5)
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="ATTACK" unique_id=100330573]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ATTACK" unique_id=100330573]
+scale = Vector2(1.1999996, 1.2000009)
 shape = SubResource("RectangleShape2D_x52qb")
 disabled = true
 
@@ -142,3 +143,5 @@ frame = 64
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=901582910]
 libraries/ = SubResource("AnimationLibrary_rqeoy")
+
+[connection signal="body_entered" from="ATTACK" to="." method="_on_attack_body_entered"]

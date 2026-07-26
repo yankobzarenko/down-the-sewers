@@ -30,6 +30,7 @@ const DODGE_DURATION = 0.2
 const DODGE_COOLDOWN = 0.75
 
 var can_attack = true
+var attacking = false
 
 func _ready() -> void:
 	on_enter()
@@ -65,7 +66,7 @@ func _physics_process(delta: float) -> void:
 		speed = SPEED_MIN
 	
 	var direction := Input.get_axis("Left", "Right")
-	if direction:
+	if direction and attacking == false:
 		speed = min(SPEED_MAX, speed + ACCEL * delta)
 		velocity.x = direction * speed
 	else:
@@ -91,7 +92,6 @@ func _physics_process(delta: float) -> void:
 		dodge_cooldown_timer -= delta
 		if dodge_cooldown_timer <= 0.0:
 			dodge_cooldown = false
-
 	
 	prev_on_floor = is_on_floor()
 	move_and_slide()
@@ -103,25 +103,28 @@ func _physics_process(delta: float) -> void:
 		new_animation = &"Fall"
 	elif absf(velocity.x) > 1:
 		new_animation = &"Run"
-	elif Input.is_action_just_pressed("attack") and can_attack == true:
+	
+	if Input.is_action_just_pressed("attack") and can_attack == true:
 		can_attack = false
+		attacking = true
 		new_animation = &"melee"
 		$AnimationPlayer.play(new_animation)
 		$ATTACK/CollisionShape2D.disabled = false
 		await $AnimationPlayer.animation_finished
 		$ATTACK/CollisionShape2D.disabled = true
 		can_attack = true
+		attacking = false
 	
-	if new_animation != animation:
+	if new_animation != animation and attacking == false:
 		animation = new_animation
 		$AnimationPlayer.play(new_animation)
 	
 	if velocity.x > 1:
 		$Sprite2D.flip_h = false
-		$ATTACK.global_position.x = $CollisionShape2D.global_position.x + 30
+		$ATTACK.global_position.x = $CollisionShape2D.global_position.x + 40
 	elif velocity.x < -1:
 		$Sprite2D.flip_h = true
-		$ATTACK.global_position.x = $CollisionShape2D.global_position.x - 30
+		$ATTACK.global_position.x = $CollisionShape2D.global_position.x - 40
 
 func kill():
 	# Player dies, reset the position to the entrance.
@@ -131,3 +134,8 @@ func kill():
 func on_enter():
 	# Position for kill system. Assigned when entering new room (see Game.gd).
 	reset_position = position
+
+func _on_attack_body_entered(body: Node2D) -> void:
+	if body.is_in_group("enemy"):
+		if body.has_method("attackDetch"):
+			body.attackDetch()

@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cy3girsr5w2u"]
+
+[ext_resource type="Script" uid="uid://buccgnvq5f6sp" path="res://SampleProject/Maps/rigid_body_2d.gd" id="1_2edk3"]
+[ext_resource type="Shader" uid="uid://dsl10oomfq68v" path="res://SampleProject/Objects/test_enemy.gdshader" id="1_ypwty"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_beykw"]
+shader = ExtResource("1_ypwty")
+shader_parameter/active = true
+shader_parameter/tint = Color(1, 1, 1, 1)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_ypwty"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_beykw"]
+
+[node name="RigidBody2D" type="RigidBody2D" unique_id=1186051768 groups=["enemy"]]
+script = ExtResource("1_2edk3")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1422127216]
+material = SubResource("ShaderMaterial_beykw")
+position = Vector2(170.1572, 314.1572)
+scale = Vector2(66.314384, 66.314384)
+texture = SubResource("PlaceholderTexture2D_ypwty")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1805807100]
+position = Vector2(170.1572, 314.1572)
+scale = Vector2(3.8111718, 3.8111718)
+shape = SubResource("RectangleShape2D_beykw")
