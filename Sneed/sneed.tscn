@@ -137,6 +137,8 @@ frame = 7
 libraries/ = SubResource("AnimationLibrary_rqeoy")
 
 [node name="VisionRay" type="RayCast2D" parent="." unique_id=1294840768]
+modulate = Color(1, 0, 0, 1)
+self_modulate = Color(1, 0, 0, 1)
 rotation = -1.5707964
 scale = Vector2(1, 2.480001)
 

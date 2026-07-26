@@ -11,7 +11,7 @@ extends CharacterBody2D
 # --------------------
 @export var patrol_points: Array[Node2D] = []
 @export var speed_walk: float = 1.7
-@export var speed_run: float = 3.0
+@export var speed_run: float = 30.0
 @export var attack_range: float = 2.0
 @export var investigate_wait_time: float = 4.0
 @export var patrol_wait_time: float = 3.0
@@ -70,6 +70,7 @@ func _physics_process(delta: float) -> void:
 # --------------------
 func _state_idle() -> void:
 	if _can_see_player():
+		print("found player!")
 		_enter_state(State.CHASE)
  
 func _state_patrol(delta: float) -> void:
@@ -109,10 +110,11 @@ func _state_chase(delta: float) -> void:
  
 	_walk_to(agent.get_next_path_position(), speed_run)
  
-	if global_transform.origin.distance_to(target.global_transform.origin) < attack_range:
+	if global_position.distance_to(target.global_position) < attack_range:
+		print("Attacking Player!")
 		_enter_state(State.ATTACK)
 	elif not _can_see_player():
-		investigate_position = target.global_transform.origin
+		investigate_position = target.global_position
 		_enter_state(State.INVESTIGATE)
  
 func _state_attack() -> void:
@@ -147,18 +149,18 @@ func _enter_state(new_state: State) -> void:
 			investigate_timer = 0.0
 			agent.set_target_position(investigate_position)
 		State.CHASE, State.INVESTIGATE:
-			return_position = global_transform.origin
+			return_position = global_position
  
 func _update_agent_target() -> void:
 	match state:
 		State.PATROL:
 			if patrol_points.size() > 0:
-				agent.set_target_position(patrol_points[patrol_index].global_transform.origin)
+				agent.set_target_position(patrol_points[patrol_index].global_position)
 		State.INVESTIGATE:
 			agent.set_target_position(investigate_position)
 		State.CHASE:
 			if target:
-				agent.set_target_position(target.global_transform.origin)
+				agent.set_target_position(target.global_position)
 		State.RETURN:
 			agent.set_target_position(return_position)
  
@@ -173,21 +175,22 @@ func _stop_and_idle() -> void:
 func _go_to_next_patrol_point() -> void:
 	if patrol_points.size() != 0:
 		patrol_index = ( patrol_index + 1 ) % patrol_points.size()
-		agent.set_target_position(patrol_points[patrol_index].global_transform.origin)
+		agent.set_target_position(patrol_points[patrol_index].global_position)
  
 func _move_towards(next_pos: Vector2, speed: float) -> void:
-	var dir = (next_pos - global_transform.origin)
-	dir.y = 0.0
-	if  is_zero_approx( dir.length() ):
+	var direction = global_position.direction_to(target.global_position)
+	direction.y = 0.0
+	if  is_zero_approx( direction.length() ):
 		velocity.x = lerp(velocity.x, 0.0, SMOOTHING_FACTOR)
 		return
  
-	dir = dir.normalized()
-	var current_facing = -global_transform.x
-	var new_dir = current_facing.slerp(dir, 0.12).normalized()
-	look_at(global_transform.origin + new_dir)
- 
-	velocity.x = dir.x * speed
+	velocity.x = direction.x * speed
+	if velocity.x > 1:
+		$Sprite2D.flip_h = false
+		$Attack.flip_h = false
+	elif velocity.x < -1:
+		$Sprite2D.flip_h = false
+		$Attack.flip_h = false
  
 func _update_path(delta):
 	update_timer -= delta
@@ -206,11 +209,15 @@ func _looking() -> void:
 	if not target:
 		return
  
-	if velocity.x > 1:
-		self.flip_h = false
-	elif velocity.x < -1:
-		self.flip_h = true
+	var to_player = (target.global_position - global_position).normalized()
+	var forward = transform.x
+	var angle_deg = rad_to_deg(acos(clamp(forward.dot(to_player), -1.0, 1.0)))
+	if angle_deg > VIEW_ANGLE * 0.5:
 		return
+ 
+	var ray_forward = vision_ray.transform
+	var new_dir = ray_forward.slerp(to_player, SMOOTHING_FACTOR).normalized()
+	vision_ray.look_at(vision_ray.global_position + new_dir)
  
  
 # --------------------

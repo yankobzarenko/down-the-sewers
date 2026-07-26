@@ -24,6 +24,7 @@ var speed: float = SPEED_MIN
 
 func _ready() -> void:
 	on_enter()
+	PlayerManager.player = self
 
 func _physics_process(delta: float) -> void:
 	if event:
