@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://doxwufoytrdbl"]
 
 [ext_resource type="Script" uid="uid://hr7mtnru7hk5" path="res://SampleProject/Objects/crow.gd" id="1_8xkur"]
-[ext_resource type="Shader" uid="uid://dsl10oomfq68v" path="res://SampleProject/Objects/test_enemy.gdshader" id="2_3f4o8"]
+[ext_resource type="Shader" uid="uid://bua0tostbhaf7" path="res://SampleProject/test_enemy.gdshader" id="2_3f4o8"]
 [ext_resource type="Texture2D" uid="uid://468144qvrivk" path="res://SampleProject/Sprites/mini-crow.png" id="2_sllu5"]
 
 [sub_resource type="Animation" id="Animation_3f4o8"]

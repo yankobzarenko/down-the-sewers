@@ -44,9 +44,12 @@ var update_timer := 0.0
 
 func _ready() -> void:
 	MetSys.register_storable_object(self)
+	target = PlayerManager.player
+	if target:
+		add_collision_exception_with(target)
+		target.add_collision_exception_with(self)
 	print("Enemy initialized")
 	velocity.y = 0
-	target = PlayerManager.player
 	attack_hitbox.body_entered.connect(_on_attack_body_entered)
 	_enter_state(State.IDLE if patrol_points.is_empty() else State.PATROL)
 

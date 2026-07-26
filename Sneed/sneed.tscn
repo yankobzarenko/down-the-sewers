@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://cvpnbvtp4wp7i"]
 
 [ext_resource type="Texture2D" uid="uid://bn5mjg4dgvkbn" path="res://Sneed/crow-man.png" id="1_nq5ig"]
-[ext_resource type="Script" uid="uid://dp6qcn80esa8n" path="res://Sneed/sneed.gd" id="1_sh1xl"]
+[ext_resource type="Script" uid="uid://d0i31w37vkmk6" path="res://Sneed/sneed.gd" id="1_sh1xl"]
 [ext_resource type="Texture2D" uid="uid://ycv24tcvocxu" path="res://Sneed/crow-man slash.png" id="2_so78a"]
-[ext_resource type="Shader" uid="uid://dsl10oomfq68v" path="res://SampleProject/Objects/test_enemy.gdshader" id="4_lpwmf"]
+[ext_resource type="Shader" uid="uid://bua0tostbhaf7" path="res://SampleProject/test_enemy.gdshader" id="4_lpwmf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nq5ig"]
 size = Vector2(40.561096, 57.588737)

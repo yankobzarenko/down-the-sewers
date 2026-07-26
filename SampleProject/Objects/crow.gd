@@ -36,8 +36,11 @@ var time_alive: float = 0.0
 # --------------------
 func _ready() -> void:
 	MetSys.register_storable_object(self)
-	spawn_position = global_position
 	target = PlayerManager.player
+	if target:
+		add_collision_exception_with(target)
+		target.add_collision_exception_with(self)
+	spawn_position = global_position
 	_pick_new_drift_target()
  
 	detection_area.body_entered.connect(_on_detection_area_body_entered)
