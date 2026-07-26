@@ -2,6 +2,7 @@
 
 [ext_resource type="TileSet" uid="uid://bwpcg2opya34n" path="res://SampleProject/Resources/Tileset.tres" id="1_wq0j7"]
 [ext_resource type="PackedScene" uid="uid://bsg0351mx3b4u" path="res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn" id="2_dk1pv"]
+[ext_resource type="PackedScene" uid="uid://doxwufoytrdbl" path="res://SampleProject/Objects/crow.tscn" id="3_crsvk"]
 
 [sub_resource type="GDScript" id="GDScript_83p04"]
 resource_name = "Ability"
@@ -62,5 +63,8 @@ grow_vertical = 2
 text = "Dash"
 horizontal_alignment = 1
 metadata/_edit_use_anchors_ = true
+
+[node name="CharacterBody2D" parent="." unique_id=956438752 instance=ExtResource("3_crsvk")]
+position = Vector2(277, 215)
 
 [connection signal="body_entered" from="Ability" to="Ability" method="_on_body_entered"]

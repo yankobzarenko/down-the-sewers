@@ -2,6 +2,7 @@
 
 [ext_resource type="TileSet" uid="uid://bwpcg2opya34n" path="res://SampleProject/Resources/Tileset.tres" id="1_1mtk5"]
 [ext_resource type="PackedScene" uid="uid://bsg0351mx3b4u" path="res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn" id="2_y78dk"]
+[ext_resource type="PackedScene" uid="uid://doxwufoytrdbl" path="res://SampleProject/Objects/crow.tscn" id="3_dxg45"]
 
 [node name="Map" type="Node2D" unique_id=439204417]
 
@@ -19,3 +20,15 @@ tile_map_data = PackedByteArray("AAADAAMAAQAIAAEAAAADAAQAAQAIAAEAAAADAAUAAQAIAAE
 tile_set = ExtResource("1_1mtk5")
 
 [node name="RoomInstance" parent="." unique_id=811957163 instance=ExtResource("2_y78dk")]
+
+[node name="CharacterBody2D" parent="." unique_id=956438752 instance=ExtResource("3_dxg45")]
+position = Vector2(214, 754)
+
+[node name="CharacterBody2D2" parent="." unique_id=980098536 instance=ExtResource("3_dxg45")]
+position = Vector2(639, 205)
+
+[node name="CharacterBody2D3" parent="." unique_id=322868109 instance=ExtResource("3_dxg45")]
+position = Vector2(645, 626)
+
+[node name="CharacterBody2D4" parent="." unique_id=331910021 instance=ExtResource("3_dxg45")]
+position = Vector2(272, 196)

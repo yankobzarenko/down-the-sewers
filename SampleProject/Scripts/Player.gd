@@ -1,8 +1,8 @@
 # This script is based on the default CharacterBody2D template. Not much interesting happening here.
 extends CharacterBody2D
 
-const SPEED_MIN = 300.0
-const SPEED_MAX = 400.0
+const SPEED_MIN = 200.0
+const SPEED_MAX = 300.0
 const ACCEL = 50.0
 const JUMP_VELOCITY = -450.0
 const MAX_FALL_SPEED = 900.0
@@ -22,8 +22,19 @@ var prev_on_floor: bool
 var airtime: float = 0
 var speed: float = SPEED_MIN
 
+var is_dodging = false
+var dodge_cooldown = false
+var dodge_timer = 0.0
+var dodge_cooldown_timer = 0.0
+const DODGE_DURATION = 0.2
+const DODGE_COOLDOWN = 0.75
+
+var can_attack = true
+var attacking = false
+
 func _ready() -> void:
 	on_enter()
+	PlayerManager.player = self
 
 func _physics_process(delta: float) -> void:
 	if event:
@@ -56,7 +67,7 @@ func _physics_process(delta: float) -> void:
 		speed = SPEED_MIN
 	
 	var direction := Input.get_axis("Left", "Right")
-	if direction:
+	if direction and attacking == false:
 		speed = min(SPEED_MAX, speed + ACCEL * delta)
 		velocity.x = direction * speed
 	else:
@@ -64,8 +75,25 @@ func _physics_process(delta: float) -> void:
 		speed = SPEED_MIN
 	
 	if &"dash" in abilities and Input.is_action_just_pressed("dash"):
-		position.x += direction * 150.0
+		is_dodging = true
+		dodge_cooldown = true
+		dodge_timer = DODGE_DURATION
+		dodge_cooldown_timer = DODGE_COOLDOWN
+	
+	if is_dodging:
+		if dodge_timer < 1.0:
+			velocity.x = direction * speed * 3.0
+		if dodge_timer >= 1.0:
+			velocity.x = direction * speed * 1.5
+		dodge_timer -= delta
+		if dodge_timer <= 0.0:
+			is_dodging = false
 
+	if dodge_cooldown:
+		dodge_cooldown_timer -= delta
+		if dodge_cooldown_timer <= 0.0:
+			dodge_cooldown = false
+	
 	prev_on_floor = is_on_floor()
 	move_and_slide()
 	
@@ -77,20 +105,57 @@ func _physics_process(delta: float) -> void:
 	elif absf(velocity.x) > 1:
 		new_animation = &"Run"
 	
-	if new_animation != animation:
+	if Input.is_action_just_pressed("attack") and can_attack == true:
+		can_attack = false
+		attacking = true
+		new_animation = &"melee"
+		$AnimationPlayer.play(new_animation)
+		$ATTACK/CollisionShape2D.disabled = false
+		await $AnimationPlayer.animation_finished
+		$ATTACK/CollisionShape2D.disabled = true
+		can_attack = true
+		attacking = false
+	
+	if new_animation != animation and attacking == false:
 		animation = new_animation
 		$AnimationPlayer.play(new_animation)
 	
 	if velocity.x > 1:
 		$Sprite2D.flip_h = false
+		$ATTACK.global_position.x = $CollisionShape2D.global_position.x + 50
 	elif velocity.x < -1:
 		$Sprite2D.flip_h = true
+		$ATTACK.global_position.x = $CollisionShape2D.global_position.x - 50
 
 func kill():
 	# Player dies, reset the position to the entrance.
 	position = reset_position
 	Game.get_singleton().load_room(MetSys.get_current_room_id())
+	health = 10
 
 func on_enter():
 	# Position for kill system. Assigned when entering new room (see Game.gd).
 	reset_position = position
+
+func _on_attack_body_entered(body: Node2D) -> void:
+	if body.is_in_group("enemy"):
+		if body.has_method("attackDetch"):
+			body.attackDetch()
+
+signal health_changed(current: int, max: int)
+
+@export var max_health: int = 10
+var health: int = max_health
+
+func attackDetch() -> void:
+	health -= 1
+	health_changed.emit(health, max_health)
+
+	var mat = $Sprite2D.get_material()
+	if mat:
+		mat.set_shader_parameter("active", true)
+		await get_tree().create_timer(0.7).timeout
+		mat.set_shader_parameter("active", false)
+
+	if health <= 0:
+		kill()

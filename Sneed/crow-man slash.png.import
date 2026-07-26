@@ -2,16 +2,26 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<<< HEAD:Sneed/crow-man slash.png.import
 uid="uid://ycv24tcvocxu"
 path="res://.godot/imported/crow-man slash.png-7ea6ec9fcf47427909a564510bf713c1.ctex"
+========
+uid="uid://bj1r4wqt2xsia"
+path="res://.godot/imported/crow-complete.png-5ec99b99510bd9370defe727cd636c67.ctex"
+>>>>>>>> proto-level:Sneed/crow-complete.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
+<<<<<<<< HEAD:Sneed/crow-man slash.png.import
 source_file="res://Sneed/crow-man slash.png"
 dest_files=["res://.godot/imported/crow-man slash.png-7ea6ec9fcf47427909a564510bf713c1.ctex"]
+========
+source_file="res://Sneed/crow-complete.png"
+dest_files=["res://.godot/imported/crow-complete.png-5ec99b99510bd9370defe727cd636c67.ctex"]
+>>>>>>>> proto-level:Sneed/crow-complete.png.import
 
 [params]
 

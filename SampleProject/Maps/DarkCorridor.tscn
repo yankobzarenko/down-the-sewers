@@ -2,6 +2,7 @@
 
 [ext_resource type="TileSet" uid="uid://bwpcg2opya34n" path="res://SampleProject/Resources/Tileset.tres" id="1_x7s6o"]
 [ext_resource type="PackedScene" uid="uid://bsg0351mx3b4u" path="res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn" id="2_113wl"]
+[ext_resource type="PackedScene" uid="uid://doxwufoytrdbl" path="res://SampleProject/Objects/crow.tscn" id="3_pobwj"]
 
 [sub_resource type="GDScript" id="GDScript_gqq55"]
 resource_name = "Ability"
@@ -61,5 +62,14 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "Double Jump"
 metadata/_edit_use_anchors_ = true
+
+[node name="CharacterBody2D" parent="." unique_id=956438752 instance=ExtResource("3_pobwj")]
+position = Vector2(784, 189)
+
+[node name="CharacterBody2D2" parent="." unique_id=2091746572 instance=ExtResource("3_pobwj")]
+position = Vector2(1402, 200)
+
+[node name="CharacterBody2D3" parent="." unique_id=136273896 instance=ExtResource("3_pobwj")]
+position = Vector2(1093, 207)
 
 [connection signal="body_entered" from="Ability" to="Ability" method="_on_body_entered"]

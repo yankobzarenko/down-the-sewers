@@ -1,0 +1,50 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+<<<<<<<< HEAD:Sneed/crow-man slash.png.import
+uid="uid://ycv24tcvocxu"
+path="res://.godot/imported/crow-man slash.png-7ea6ec9fcf47427909a564510bf713c1.ctex"
+========
+uid="uid://bj1r4wqt2xsia"
+path="res://.godot/imported/crow-complete.png-5ec99b99510bd9370defe727cd636c67.ctex"
+>>>>>>>> proto-level:Sneed/crow-complete.png.import
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+<<<<<<<< HEAD:Sneed/crow-man slash.png.import
+source_file="res://Sneed/crow-man slash.png"
+dest_files=["res://.godot/imported/crow-man slash.png-7ea6ec9fcf47427909a564510bf713c1.ctex"]
+========
+source_file="res://Sneed/crow-complete.png"
+dest_files=["res://.godot/imported/crow-complete.png-5ec99b99510bd9370defe727cd636c67.ctex"]
+>>>>>>>> proto-level:Sneed/crow-complete.png.import
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/uastc_level=0
+compress/rdo_quality_loss=0.0
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/channel_remap/red=0
+process/channel_remap/green=1
+process/channel_remap/blue=2
+process/channel_remap/alpha=3
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=1
