@@ -32,6 +32,8 @@ const DODGE_COOLDOWN = 0.75
 var can_attack = true
 var attacking = false
 
+@export var health = 5
+
 func _ready() -> void:
 	on_enter()
 
@@ -139,3 +141,11 @@ func _on_attack_body_entered(body: Node2D) -> void:
 	if body.is_in_group("enemy"):
 		if body.has_method("attackDetch"):
 			body.attackDetch()
+
+func attackDetch():
+	health -= 1
+	$Sprite2D.get_material().set_shader_parameter("active", true)
+	await get_tree().create_timer(0.7).timeout
+	$Sprite2D.get_material().set_shader_parameter("active", false)
+	if health <= 0:
+		self.queue_free()
