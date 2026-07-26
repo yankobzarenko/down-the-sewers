@@ -7,8 +7,6 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yj7bn"]
 size = Vector2(21.5, 62)
 
-<<<<<<< Updated upstream
-=======
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x52qb"]
 size = Vector2(30.625008, 28)
 
@@ -17,7 +15,6 @@ shader = ExtResource("2_ifgs0")
 shader_parameter/active = false
 shader_parameter/tint = Color(1, 1, 1, 1)
 
->>>>>>> Stashed changes
 [sub_resource type="Animation" id="Animation_mul1d"]
 resource_name = "Fall"
 length = 0.3
@@ -116,8 +113,6 @@ metadata/player = true
 position = Vector2(2.25, 15)
 shape = SubResource("RectangleShape2D_yj7bn")
 
-<<<<<<< Updated upstream
-=======
 [node name="ATTACK" type="Area2D" parent="." unique_id=1493932449]
 position = Vector2(2, 8)
 
@@ -126,7 +121,6 @@ scale = Vector2(1.1999996, 1.2000009)
 shape = SubResource("RectangleShape2D_x52qb")
 disabled = true
 
->>>>>>> Stashed changes
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1396669533]
 texture_filter = 1
 material = SubResource("ShaderMaterial_sllu5")

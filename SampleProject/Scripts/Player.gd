@@ -21,6 +21,7 @@ var double_jump: bool
 var prev_on_floor: bool
 var airtime: float = 0
 var speed: float = SPEED_MIN
+var health: int = 5
 
 func _ready() -> void:
 	on_enter()
@@ -95,8 +96,6 @@ func kill():
 func on_enter():
 	# Position for kill system. Assigned when entering new room (see Game.gd).
 	reset_position = position
-<<<<<<< Updated upstream
-=======
 
 func _on_attack_body_entered(body: Node2D) -> void:
 	if body.is_in_group("enemy"):
@@ -110,4 +109,3 @@ func attackDetch():
 	$Sprite2D.get_material().set_shader_parameter("active", false)
 	if health <= 0:
 		kill()
->>>>>>> Stashed changes

@@ -304,25 +304,4 @@ layout_mode = 2
 texture = ExtResource("3_kng3d")
 id = "random_collectible"
 
-<<<<<<< Updated upstream
-[node name="HBoxContainer" type="HBoxContainer" parent="UI" unique_id=549938208]
-offset_left = 8.0
-offset_top = 8.0
-offset_right = 48.0
-offset_bottom = 34.0
-
-[node name="TextureRect" type="TextureRect" parent="UI/HBoxContainer" unique_id=1845997822]
-layout_mode = 2
-texture = ExtResource("3_kng3d")
-expand_mode = 2
-stretch_mode = 5
-
-[node name="CollectibleCount" type="Label" parent="UI/HBoxContainer" unique_id=1438876860]
-unique_name_in_owner = true
-layout_mode = 2
-text = "0"
-vertical_alignment = 1
-
-=======
->>>>>>> Stashed changes
 [connection signal="draw" from="UI/MapWindow/TopDraw" to="UI/MapWindow" method="_on_top_draw"]
