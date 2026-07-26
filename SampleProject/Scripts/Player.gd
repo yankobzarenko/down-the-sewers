@@ -29,7 +29,7 @@ var dodge_cooldown_timer = 0.0
 const DODGE_DURATION = 0.2
 const DODGE_COOLDOWN = 0.75
 
-var is_attacking = false
+var can_attack = true
 
 func _ready() -> void:
 	on_enter()
@@ -103,23 +103,25 @@ func _physics_process(delta: float) -> void:
 		new_animation = &"Fall"
 	elif absf(velocity.x) > 1:
 		new_animation = &"Run"
-	elif Input.is_action_just_pressed("attack"):
+	elif Input.is_action_just_pressed("attack") and can_attack == true:
+		can_attack = false
 		new_animation = &"melee"
-	
+		$AnimationPlayer.play(new_animation)
+		$ATTACK/CollisionShape2D.disabled = false
+		await $AnimationPlayer.animation_finished
+		$ATTACK/CollisionShape2D.disabled = true
+		can_attack = true
 	
 	if new_animation != animation:
 		animation = new_animation
 		$AnimationPlayer.play(new_animation)
-		if new_animation == &"melee":
-			$ATTACK/CollisionShape2D.disabled = false
-			await $AnimationPlayer.animation_finished
-			$ATTACK/CollisionShape2D.disabled = true
 	
 	if velocity.x > 1:
 		$Sprite2D.flip_h = false
+		$ATTACK.global_position.x = $CollisionShape2D.global_position.x + 30
 	elif velocity.x < -1:
 		$Sprite2D.flip_h = true
-
+		$ATTACK.global_position.x = $CollisionShape2D.global_position.x - 30
 
 func kill():
 	# Player dies, reset the position to the entrance.
