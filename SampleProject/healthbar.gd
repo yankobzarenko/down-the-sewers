@@ -10,3 +10,7 @@ func _ready() -> void:
 func _on_health_changed(current: int, max: int) -> void:
 	max_value = max
 	value = current
+
+func _process(float):
+	var player = PlayerManager.player
+	value = player.health
