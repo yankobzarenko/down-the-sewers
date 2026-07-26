@@ -90,7 +90,24 @@ func kill():
 	# Player dies, reset the position to the entrance.
 	position = reset_position
 	Game.get_singleton().load_room(MetSys.get_current_room_id())
+	health = 5
 
 func on_enter():
 	# Position for kill system. Assigned when entering new room (see Game.gd).
 	reset_position = position
+<<<<<<< Updated upstream
+=======
+
+func _on_attack_body_entered(body: Node2D) -> void:
+	if body.is_in_group("enemy"):
+		if body.has_method("attackDetch"):
+			body.attackDetch()
+
+func attackDetch():
+	health -= 1
+	$Sprite2D.get_material().set_shader_parameter("active", true)
+	await get_tree().create_timer(0.7).timeout
+	$Sprite2D.get_material().set_shader_parameter("active", false)
+	if health <= 0:
+		kill()
+>>>>>>> Stashed changes

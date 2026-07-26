@@ -21,6 +21,11 @@ tile_set = ExtResource("1_u8qiv")
 
 [node name="RoomInstance" parent="." unique_id=1594970421 instance=ExtResource("2_dw1bb")]
 
+<<<<<<< Updated upstream
 [node name="CharacterBody2D" parent="." unique_id=1589600813 instance=ExtResource("3_dw1bb")]
 position = Vector2(210, 300.00003)
 scale = Vector2(16.04, 16.04)
+=======
+[node name="CharacterBody2D" parent="." unique_id=956438752 instance=ExtResource("3_dw1bb")]
+position = Vector2(180, 264)
+>>>>>>> Stashed changes

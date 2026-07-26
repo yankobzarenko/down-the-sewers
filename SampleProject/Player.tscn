@@ -1,11 +1,23 @@
 [gd_scene format=3 uid="uid://xpbhai8nlgtx"]
 
 [ext_resource type="Script" uid="uid://befxy1ldt1ys1" path="res://SampleProject/Scripts/Player.gd" id="1_ecbsx"]
+[ext_resource type="Shader" uid="uid://dsl10oomfq68v" path="res://SampleProject/Objects/test_enemy.gdshader" id="2_ifgs0"]
 [ext_resource type="Texture2D" uid="uid://rmc03br1yacf" path="res://SampleProject/Sprites/platformer_sprites_pixelized_0.png" id="2_rfopg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yj7bn"]
 size = Vector2(21.5, 62)
 
+<<<<<<< Updated upstream
+=======
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x52qb"]
+size = Vector2(30.625008, 28)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sllu5"]
+shader = ExtResource("2_ifgs0")
+shader_parameter/active = false
+shader_parameter/tint = Color(1, 1, 1, 1)
+
+>>>>>>> Stashed changes
 [sub_resource type="Animation" id="Animation_mul1d"]
 resource_name = "Fall"
 length = 0.3
@@ -104,8 +116,20 @@ metadata/player = true
 position = Vector2(2.25, 15)
 shape = SubResource("RectangleShape2D_yj7bn")
 
+<<<<<<< Updated upstream
+=======
+[node name="ATTACK" type="Area2D" parent="." unique_id=1493932449]
+position = Vector2(2, 8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ATTACK" unique_id=100330573]
+scale = Vector2(1.1999996, 1.2000009)
+shape = SubResource("RectangleShape2D_x52qb")
+disabled = true
+
+>>>>>>> Stashed changes
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1396669533]
 texture_filter = 1
+material = SubResource("ShaderMaterial_sllu5")
 position = Vector2(1.5000036, 12.999998)
 scale = Vector2(1.2656251, 1.09375)
 texture = ExtResource("2_rfopg")
