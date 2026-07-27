@@ -56,6 +56,8 @@ project/assembly_name="Down the Sewers"
 [editor]
 
 script/search_in_file_extensions=PackedStringArray("gd", "gdshader", "tscn")
+version_control/plugin_name="GitPlugin"
+version_control/autoload_on_startup=true
 
 [editor_plugins]
 
